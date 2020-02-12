@@ -22,10 +22,10 @@
 #define PARAMETERS_H
 
 // Number of objects from ratslife.wbt
-#define MAX_WALLS 121
-#define MAX_INTERVALS 121
-#define MAX_FEEDERS 4
-#define MAX_EPUCKS 4
+#define MAX_WALLS 301
+#define MAX_INTERVALS 301//121
+#define MAX_FEEDERS 0
+#define MAX_EPUCKS 1
 
 // A cell unit correspond to this value in meter
 #define RATIO 0.112

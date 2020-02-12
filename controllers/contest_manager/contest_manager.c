@@ -32,8 +32,8 @@
 
 #define TIME_STEP 64
 
-#define MAZE_WIDTH 10
-#define MAZE_HEIGHT 10
+#define MAZE_WIDTH 16
+#define MAZE_HEIGHT 16
 
 static Maze *maze = NULL;
 
@@ -64,30 +64,27 @@ int main(int argc, char **argv) {
   step(TIME_STEP);
 #endif
 
-  // init the maze structure
-  maze = (Maze *)malloc(sizeof(Maze));
-  init_maze(maze, MAZE_WIDTH, MAZE_HEIGHT);
-  while (!generate_random_maze(maze)) {
-    delete_maze(maze);
-    init_maze(maze, MAZE_WIDTH, MAZE_HEIGHT);
-  }
-  
+// init the maze structure
+maze = (Maze *)malloc(sizeof(Maze));
+init_maze(maze, MAZE_WIDTH, MAZE_HEIGHT);
 
+///*
+while (!generate_random_maze(maze)) {
+  delete_maze(maze);
+  init_maze(maze, MAZE_WIDTH, MAZE_HEIGHT);
+}
+//*/
+
+genetate_saved_maze(maze);
+ 
 #ifdef DEBUG
   // display the maze into the debug display
   WbDeviceTag debug_display = wb_robot_get_device("debug_display");
   display_maze(maze, debug_display);
 #endif
-/*_________  ___       __   _______   ________  ___  __           
-|\___   ___\\  \     |\  \|\  ___ \ |\   __  \|\  \|\  \         
-\|___ \  \_\ \  \    \ \  \ \   __/|\ \  \|\  \ \  \/  /|_       
-     \ \  \ \ \  \  __\ \  \ \  \_|/_\ \   __  \ \   ___  \      
-      \ \  \ \ \  \|\__\_\  \ \  \_|\ \ \  \ \  \ \  \\ \  \     
-       \ \__\ \ \____________\ \_______\ \__\ \__\ \__\\ \__\    
-        \|__|  \|____________|\|_______|\|__|\|__|\|__| \|__|    
-*/
 
-  genetate_saved_maze(maze);
+  // char message[128];
+  // snprintf(message, 128, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
 
 
