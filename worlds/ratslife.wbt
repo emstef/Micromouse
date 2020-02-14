@@ -2471,6 +2471,7 @@ Robot {
   children [
     DEF GROUND_SHAPE Shape {
       appearance PBRAppearance {
+        baseColor 0 0 0
         baseColorMap ImageTexture {
           url [
             "textures/ground_tiles.png"

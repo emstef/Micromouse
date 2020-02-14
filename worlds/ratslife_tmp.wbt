@@ -7,8 +7,8 @@ WorldInfo {
 }
 DEF VIEWPOINT Viewpoint {
   fieldOfView 0.755398
-  orientation -0.05548361898776781 0.8237253313028042 0.5642677968784907 3.0983082798669184
-  position 0.9457961015405688 3.079908617645193 -0.4696121780883603
+  orientation 0.07071261689073406 0.9611290595191075 0.2668907206337082 3.90287204869425
+  position -1.4715233082077357 1.6127867327517216 -1.4021715060830025
   near 0.01
 }
 TexturedBackground {
@@ -304,596 +304,597 @@ DEF W063 LegoWall {
   name "LEGO wall(64)"
 }
 DEF W064 LegoWall {
-  translation 1.68 0.025 1.4
+  translation 1.68 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(65)"
 }
 DEF W065 LegoWall {
-  translation 1.68 0.025 1.288
+  translation 1.68 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(66)"
 }
 DEF W066 LegoWall {
-  translation 1.68 0.025 0.952
+  translation 1.68 0.025 0.728
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(67)"
 }
 DEF W067 LegoWall {
-  translation 1.68 0.025 0.8400000000000001
+  translation 1.68 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(68)"
 }
 DEF W068 LegoWall {
-  translation 1.68 0.025 0.504
+  translation 1.68 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(69)"
 }
 DEF W069 LegoWall {
-  translation 1.568 0.025 1.512
+  translation 1.68 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(70)"
 }
 DEF W070 LegoWall {
-  translation 1.568 0.025 1.1760000000000002
+  translation 1.568 0.025 1.624
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(71)"
 }
 DEF W071 LegoWall {
-  translation 1.568 0.025 0.952
+  translation 1.568 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(72)"
 }
 DEF W072 LegoWall {
-  translation 1.568 0.025 0.728
+  translation 1.568 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(73)"
 }
 DEF W073 LegoWall {
-  translation 1.568 0.025 0.6160000000000001
+  translation 1.568 0.025 1.064
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(74)"
 }
 DEF W074 LegoWall {
-  translation 1.568 0.025 0.504
+  translation 1.568 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(75)"
 }
 DEF W075 LegoWall {
-  translation 1.456 0.025 1.1760000000000002
+  translation 1.568 0.025 0.8400000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(76)"
 }
 DEF W076 LegoWall {
-  translation 1.456 0.025 0.8400000000000001
+  translation 1.568 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(77)"
 }
 DEF W077 LegoWall {
-  translation 1.456 0.025 0.6160000000000001
+  translation 1.456 0.025 1.624
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(78)"
 }
 DEF W078 LegoWall {
-  translation 1.456 0.025 0.504
+  translation 1.456 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(79)"
 }
 DEF W079 LegoWall {
-  translation 1.456 0.025 0.392
+  translation 1.456 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(80)"
 }
 DEF W080 LegoWall {
-  translation 1.456 0.025 0.28
+  translation 1.456 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(81)"
 }
 DEF W081 LegoWall {
-  translation 1.456 0.025 0.168
+  translation 1.456 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(82)"
 }
 DEF W082 LegoWall {
-  translation 1.456 0.025 0.056
+  translation 1.456 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(83)"
 }
 DEF W083 LegoWall {
-  translation 1.344 0.025 1.624
+  translation 1.456 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(84)"
 }
 DEF W084 LegoWall {
-  translation 1.344 0.025 1.4
+  translation 1.456 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(85)"
 }
 DEF W085 LegoWall {
-  translation 1.344 0.025 1.1760000000000002
+  translation 1.456 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(86)"
 }
 DEF W086 LegoWall {
-  translation 1.344 0.025 1.064
+  translation 1.456 0.025 0.056
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(87)"
 }
 DEF W087 LegoWall {
-  translation 1.344 0.025 0.056
+  translation 1.344 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(88)"
 }
 DEF W088 LegoWall {
-  translation 1.232 0.025 1.4
+  translation 1.344 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(89)"
 }
 DEF W089 LegoWall {
-  translation 1.232 0.025 1.288
+  translation 1.344 0.025 1.064
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(90)"
 }
 DEF W090 LegoWall {
-  translation 1.232 0.025 0.6160000000000001
+  translation 1.344 0.025 0.8400000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(91)"
 }
 DEF W091 LegoWall {
-  translation 1.232 0.025 0.504
+  translation 1.344 0.025 0.728
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(92)"
 }
 DEF W092 LegoWall {
-  translation 1.232 0.025 0.28
+  translation 1.344 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(93)"
 }
 DEF W093 LegoWall {
-  translation 1.232 0.025 0.168
+  translation 1.344 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(94)"
 }
 DEF W094 LegoWall {
-  translation 1.12 0.025 1.624
+  translation 1.344 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(95)"
 }
 DEF W095 LegoWall {
-  translation 1.12 0.025 0.8400000000000001
+  translation 1.232 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(96)"
 }
 DEF W096 LegoWall {
-  translation 1.12 0.025 0.504
+  translation 1.232 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(97)"
 }
 DEF W097 LegoWall {
-  translation 1.12 0.025 0.392
+  translation 1.232 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(98)"
 }
 DEF W098 LegoWall {
-  translation 1.008 0.025 1.624
+  translation 1.232 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(99)"
 }
 DEF W099 LegoWall {
-  translation 1.008 0.025 1.4
+  translation 1.232 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(100)"
 }
 DEF W100 LegoWall {
-  translation 1.008 0.025 1.288
+  translation 1.232 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(101)"
 }
 DEF W101 LegoWall {
-  translation 1.008 0.025 0.728
+  translation 1.232 0.025 0.056
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(102)"
 }
 DEF W102 LegoWall {
-  translation 1.008 0.025 0.28
+  translation 1.12 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(103)"
 }
 DEF W103 LegoWall {
-  translation 1.008 0.025 0.056
+  translation 1.12 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(104)"
 }
 DEF W104 LegoWall {
-  translation 0.896 0.025 1.512
+  translation 1.12 0.025 0.8400000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(105)"
 }
 DEF W105 LegoWall {
-  translation 0.896 0.025 1.1760000000000002
+  translation 1.12 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(106)"
 }
 DEF W106 LegoWall {
-  translation 0.896 0.025 0.168
+  translation 1.12 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(107)"
 }
 DEF W107 LegoWall {
-  translation 0.784 0.025 1.624
+  translation 1.12 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(108)"
 }
 DEF W108 LegoWall {
-  translation 0.784 0.025 1.512
+  translation 1.008 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(109)"
 }
 DEF W109 LegoWall {
-  translation 0.784 0.025 1.4
+  translation 1.008 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(110)"
 }
 DEF W110 LegoWall {
-  translation 0.784 0.025 1.288
+  translation 1.008 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(111)"
 }
 DEF W111 LegoWall {
-  translation 0.784 0.025 0.952
+  translation 1.008 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(112)"
 }
 DEF W112 LegoWall {
-  translation 0.784 0.025 0.8400000000000001
+  translation 1.008 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(113)"
 }
 DEF W113 LegoWall {
-  translation 0.784 0.025 0.6160000000000001
+  translation 1.008 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(114)"
 }
 DEF W114 LegoWall {
-  translation 0.784 0.025 0.504
+  translation 1.008 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(115)"
 }
 DEF W115 LegoWall {
-  translation 0.784 0.025 0.392
+  translation 0.896 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(116)"
 }
 DEF W116 LegoWall {
-  translation 0.672 0.025 0.952
+  translation 0.896 0.025 1.064
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(117)"
 }
 DEF W117 LegoWall {
-  translation 0.672 0.025 0.728
+  translation 0.896 0.025 0.8400000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(118)"
 }
 DEF W118 LegoWall {
-  translation 0.672 0.025 0.6160000000000001
+  translation 0.896 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(119)"
 }
 DEF W119 LegoWall {
-  translation 0.672 0.025 0.504
+  translation 0.896 0.025 0.168
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(120)"
 }
 DEF W120 LegoWall {
-  translation 0.672 0.025 0.392
+  translation 0.784 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(121)"
 }
 DEF W121 LegoWall {
-  translation 0.672 0.025 0.28
+  translation 0.784 0.025 0.8400000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(122)"
 }
 DEF W122 LegoWall {
-  translation 0.672 0.025 0.168
+  translation 0.784 0.025 0.728
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(123)"
 }
 DEF W123 LegoWall {
-  translation 0.672 0.025 0.056
+  translation 0.784 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(124)"
 }
 DEF W124 LegoWall {
-  translation 0.56 0.025 1.512
+  translation 0.784 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(125)"
 }
 DEF W125 LegoWall {
-  translation 0.56 0.025 1.064
+  translation 0.784 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(126)"
 }
 DEF W126 LegoWall {
-  translation 0.56 0.025 0.952
+  translation 0.672 0.025 1.624
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(127)"
 }
 DEF W127 LegoWall {
-  translation 0.56 0.025 0.392
+  translation 0.672 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(128)"
 }
 DEF W128 LegoWall {
-  translation 0.56 0.025 0.168
+  translation 0.672 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(129)"
 }
 DEF W129 LegoWall {
-  translation 0.56 0.025 0.056
+  translation 0.672 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(130)"
 }
 DEF W130 LegoWall {
-  translation 0.448 0.025 1.624
+  translation 0.56 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(131)"
 }
 DEF W131 LegoWall {
-  translation 0.448 0.025 1.512
+  translation 0.56 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(132)"
 }
 DEF W132 LegoWall {
-  translation 0.448 0.025 1.4
+  translation 0.56 0.025 0.6160000000000001
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(133)"
 }
 DEF W133 LegoWall {
-  translation 0.448 0.025 0.8400000000000001
+  translation 0.56 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(134)"
 }
 DEF W134 LegoWall {
-  translation 0.448 0.025 0.6160000000000001
+  translation 0.448 0.025 1.1760000000000002
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(135)"
 }
 DEF W135 LegoWall {
-  translation 0.448 0.025 0.504
+  translation 0.448 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(136)"
 }
 DEF W136 LegoWall {
-  translation 0.448 0.025 0.168
+  translation 0.448 0.025 0.728
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(137)"
 }
 DEF W137 LegoWall {
-  translation 0.336 0.025 1.288
+  translation 0.448 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(138)"
 }
 DEF W138 LegoWall {
-  translation 0.336 0.025 1.064
+  translation 0.448 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(139)"
 }
 DEF W139 LegoWall {
-  translation 0.336 0.025 0.8400000000000001
+  translation 0.336 0.025 1.624
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(140)"
 }
 DEF W140 LegoWall {
-  translation 0.336 0.025 0.392
+  translation 0.336 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(141)"
 }
 DEF W141 LegoWall {
-  translation 0.336 0.025 0.28
+  translation 0.336 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(142)"
 }
 DEF W142 LegoWall {
-  translation 0.336 0.025 0.056
+  translation 0.336 0.025 1.064
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(143)"
 }
 DEF W143 LegoWall {
-  translation 0.224 0.025 1.1760000000000002
+  translation 0.336 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(144)"
 }
 DEF W144 LegoWall {
-  translation 0.224 0.025 1.064
+  translation 0.336 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(145)"
 }
 DEF W145 LegoWall {
-  translation 0.224 0.025 0.8400000000000001
+  translation 0.336 0.025 0.056
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(146)"
 }
 DEF W146 LegoWall {
-  translation 0.224 0.025 0.728
+  translation 0.224 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(147)"
 }
 DEF W147 LegoWall {
-  translation 0.224 0.025 0.6160000000000001
+  translation 0.224 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(148)"
 }
 DEF W148 LegoWall {
-  translation 0.112 0.025 1.512
+  translation 0.224 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(149)"
 }
 DEF W149 LegoWall {
-  translation 0.112 0.025 1.4
+  translation 0.224 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(150)"
 }
 DEF W150 LegoWall {
-  translation 0.112 0.025 1.1760000000000002
+  translation 0.224 0.025 0.056
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(151)"
 }
 DEF W151 LegoWall {
-  translation 0.112 0.025 0.8400000000000001
+  translation 0.112 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(152)"
 }
 DEF W152 LegoWall {
-  translation 0.112 0.025 0.728
+  translation 0.112 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(153)"
 }
 DEF W153 LegoWall {
-  translation 0.112 0.025 0.504
+  translation 0.112 0.025 0.28
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(154)"
 }
 DEF W154 LegoWall {
-  translation 0.112 0.025 0.28
+  translation 0 0.025 1.512
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(155)"
 }
 DEF W155 LegoWall {
-  translation 0.112 0.025 0.168
+  translation 0 0.025 1.4
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(156)"
 }
 DEF W156 LegoWall {
-  translation 0.112 0.025 0.056
+  translation 0 0.025 1.288
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(157)"
 }
 DEF W157 LegoWall {
-  translation 0 0.025 1.624
+  translation 0 0.025 0.952
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(158)"
 }
 DEF W158 LegoWall {
-  translation 0 0.025 1.4
+  translation 0 0.025 0.728
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(159)"
 }
 DEF W159 LegoWall {
-  translation 0 0.025 1.1760000000000002
+  translation 0 0.025 0.504
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(160)"
 }
 DEF W160 LegoWall {
-  translation 0 0.025 0.728
+  translation 0 0.025 0.392
   rotation 0 1 0 1.5707963267948966
   name "LEGO wall(161)"
 }
 DEF W161 LegoWall {
-  translation 1.624 0.025 1.68
+  translation 0 0.025 0.056
+  rotation 0 1 0 1.5707963267948966
   name "LEGO wall(162)"
 }
 DEF W162 LegoWall {
-  translation 1.512 0.025 1.68
+  translation 1.624 0.025 1.68
   name "LEGO wall(163)"
 }
 DEF W163 LegoWall {
-  translation 0.8400000000000001 0.025 1.68
+  translation 1.1760000000000002 0.025 1.68
   name "LEGO wall(164)"
 }
 DEF W164 LegoWall {
-  translation 0.28 0.025 1.68
+  translation 1.064 0.025 1.68
   name "LEGO wall(165)"
 }
 DEF W165 LegoWall {
-  translation 1.512 0.025 1.568
+  translation 0.952 0.025 1.68
   name "LEGO wall(166)"
 }
 DEF W166 LegoWall {
-  translation 1.4 0.025 1.568
+  translation 0.8400000000000001 0.025 1.68
   name "LEGO wall(167)"
 }
 DEF W167 LegoWall {
-  translation 1.1760000000000002 0.025 1.568
+  translation 0.6160000000000001 0.025 1.68
   name "LEGO wall(168)"
 }
 DEF W168 LegoWall {
-  translation 0.728 0.025 1.568
+  translation 0.28 0.025 1.68
   name "LEGO wall(169)"
 }
 DEF W169 LegoWall {
-  translation 0.28 0.025 1.568
+  translation 0.168 0.025 1.68
   name "LEGO wall(170)"
 }
 DEF W170 LegoWall {
-  translation 0.056 0.025 1.568
+  translation 1.288 0.025 1.568
   name "LEGO wall(171)"
 }
 DEF W171 LegoWall {
-  translation 1.288 0.025 1.456
+  translation 1.1760000000000002 0.025 1.568
   name "LEGO wall(172)"
 }
 DEF W172 LegoWall {
-  translation 1.1760000000000002 0.025 1.456
+  translation 0.504 0.025 1.568
   name "LEGO wall(173)"
 }
 DEF W173 LegoWall {
-  translation 1.064 0.025 1.456
+  translation 0.392 0.025 1.568
   name "LEGO wall(174)"
 }
 DEF W174 LegoWall {
-  translation 0.728 0.025 1.456
+  translation 1.624 0.025 1.456
   name "LEGO wall(175)"
 }
 DEF W175 LegoWall {
-  translation 0.28 0.025 1.456
+  translation 1.288 0.025 1.456
   name "LEGO wall(176)"
 }
 DEF W176 LegoWall {
-  translation 1.512 0.025 1.344
+  translation 0.8400000000000001 0.025 1.456
   name "LEGO wall(177)"
 }
 DEF W177 LegoWall {
-  translation 1.4 0.025 1.344
+  translation 0.728 0.025 1.456
   name "LEGO wall(178)"
 }
 DEF W178 LegoWall {
-  translation 1.1760000000000002 0.025 1.344
+  translation 0.392 0.025 1.456
   name "LEGO wall(179)"
 }
 DEF W179 LegoWall {
-  translation 1.064 0.025 1.344
+  translation 0.168 0.025 1.456
   name "LEGO wall(180)"
 }
 DEF W180 LegoWall {
-  translation 0.728 0.025 1.344
+  translation 1.624 0.025 1.344
   name "LEGO wall(181)"
 }
 DEF W181 LegoWall {
-  translation 0.168 0.025 1.344
+  translation 1.288 0.025 1.344
   name "LEGO wall(182)"
 }
 DEF W182 LegoWall {
-  translation 0.056 0.025 1.344
+  translation 1.1760000000000002 0.025 1.344
   name "LEGO wall(183)"
 }
 DEF W183 LegoWall {
-  translation 1.624 0.025 1.232
+  translation 0.168 0.025 1.344
   name "LEGO wall(184)"
 }
 DEF W184 LegoWall {
-  translation 1.064 0.025 1.232
+  translation 1.512 0.025 1.232
   name "LEGO wall(185)"
 }
 DEF W185 LegoWall {
-  translation 0.8400000000000001 0.025 1.232
+  translation 0.952 0.025 1.232
   name "LEGO wall(186)"
 }
 DEF W186 LegoWall {
-  translation 0.728 0.025 1.232
+  translation 0.8400000000000001 0.025 1.232
   name "LEGO wall(187)"
 }
 DEF W187 LegoWall {
-  translation 0.6160000000000001 0.025 1.232
+  translation 0.728 0.025 1.232
   name "LEGO wall(188)"
 }
 DEF W188 LegoWall {
@@ -901,11 +902,11 @@ DEF W188 LegoWall {
   name "LEGO wall(189)"
 }
 DEF W189 LegoWall {
-  translation 1.624 0.025 1.12
+  translation 0.392 0.025 1.232
   name "LEGO wall(190)"
 }
 DEF W190 LegoWall {
-  translation 1.4 0.025 1.12
+  translation 1.512 0.025 1.12
   name "LEGO wall(191)"
 }
 DEF W191 LegoWall {
@@ -913,11 +914,11 @@ DEF W191 LegoWall {
   name "LEGO wall(192)"
 }
 DEF W192 LegoWall {
-  translation 0.8400000000000001 0.025 1.12
+  translation 0.728 0.025 1.12
   name "LEGO wall(193)"
 }
 DEF W193 LegoWall {
-  translation 0.728 0.025 1.12
+  translation 0.6160000000000001 0.025 1.12
   name "LEGO wall(194)"
 }
 DEF W194 LegoWall {
@@ -925,235 +926,235 @@ DEF W194 LegoWall {
   name "LEGO wall(195)"
 }
 DEF W195 LegoWall {
-  translation 0.056 0.025 1.12
+  translation 0.28 0.025 1.12
   name "LEGO wall(196)"
 }
 DEF W196 LegoWall {
-  translation 1.288 0.025 1.008
+  translation 0.056 0.025 1.12
   name "LEGO wall(197)"
 }
 DEF W197 LegoWall {
-  translation 1.064 0.025 1.008
+  translation 1.624 0.025 1.008
   name "LEGO wall(198)"
 }
 DEF W198 LegoWall {
-  translation 0.952 0.025 1.008
+  translation 1.064 0.025 1.008
   name "LEGO wall(199)"
 }
 DEF W199 LegoWall {
-  translation 0.392 0.025 0.896
+  translation 0.8400000000000001 0.025 1.008
   name "LEGO wall(200)"
 }
 DEF W200 LegoWall {
-  translation 0.28 0.025 0.896
+  translation 0.6160000000000001 0.025 1.008
   name "LEGO wall(201)"
 }
 DEF W201 LegoWall {
-  translation 0.168 0.025 0.896
+  translation 0.504 0.025 1.008
   name "LEGO wall(202)"
 }
 DEF W202 LegoWall {
-  translation 0.056 0.025 0.896
+  translation 0.28 0.025 1.008
   name "LEGO wall(203)"
 }
 DEF W203 LegoWall {
-  translation 1.624 0.025 0.784
+  translation 1.624 0.025 0.896
   name "LEGO wall(204)"
 }
 DEF W204 LegoWall {
-  translation 1.4 0.025 0.784
+  translation 1.4 0.025 0.896
   name "LEGO wall(205)"
 }
 DEF W205 LegoWall {
-  translation 1.288 0.025 0.784
+  translation 1.288 0.025 0.896
   name "LEGO wall(206)"
 }
 DEF W206 LegoWall {
-  translation 1.1760000000000002 0.025 0.784
+  translation 1.1760000000000002 0.025 0.896
   name "LEGO wall(207)"
 }
 DEF W207 LegoWall {
-  translation 0.952 0.025 0.784
+  translation 0.6160000000000001 0.025 0.896
   name "LEGO wall(208)"
 }
 DEF W208 LegoWall {
-  translation 0.056 0.025 0.784
+  translation 0.504 0.025 0.896
   name "LEGO wall(209)"
 }
 DEF W209 LegoWall {
-  translation 1.288 0.025 0.672
+  translation 0.392 0.025 0.896
   name "LEGO wall(210)"
 }
 DEF W210 LegoWall {
-  translation 0.952 0.025 0.672
+  translation 0.28 0.025 0.896
   name "LEGO wall(211)"
 }
 DEF W211 LegoWall {
-  translation 0.8400000000000001 0.025 0.672
+  translation 0.056 0.025 0.896
   name "LEGO wall(212)"
 }
 DEF W212 LegoWall {
-  translation 0.056 0.025 0.672
+  translation 0.6160000000000001 0.025 0.784
   name "LEGO wall(213)"
 }
 DEF W213 LegoWall {
-  translation 1.288 0.025 0.56
+  translation 1.4 0.025 0.672
   name "LEGO wall(214)"
 }
 DEF W214 LegoWall {
-  translation 1.064 0.025 0.56
+  translation 1.064 0.025 0.672
   name "LEGO wall(215)"
 }
 DEF W215 LegoWall {
-  translation 1.512 0.025 0.448
+  translation 0.952 0.025 0.672
   name "LEGO wall(216)"
 }
 DEF W216 LegoWall {
-  translation 1.1760000000000002 0.025 0.448
+  translation 0.8400000000000001 0.025 0.672
   name "LEGO wall(217)"
 }
 DEF W217 LegoWall {
-  translation 0.952 0.025 0.448
+  translation 0.728 0.025 0.672
   name "LEGO wall(218)"
 }
 DEF W218 LegoWall {
-  translation 0.504 0.025 0.448
+  translation 0.168 0.025 0.672
   name "LEGO wall(219)"
 }
 DEF W219 LegoWall {
-  translation 0.392 0.025 0.448
+  translation 0.056 0.025 0.672
   name "LEGO wall(220)"
 }
 DEF W220 LegoWall {
-  translation 0.056 0.025 0.448
+  translation 1.624 0.025 0.56
   name "LEGO wall(221)"
 }
 DEF W221 LegoWall {
-  translation 1.624 0.025 0.336
+  translation 1.1760000000000002 0.025 0.56
   name "LEGO wall(222)"
 }
 DEF W222 LegoWall {
-  translation 1.288 0.025 0.336
+  translation 0.504 0.025 0.56
   name "LEGO wall(223)"
 }
 DEF W223 LegoWall {
-  translation 1.064 0.025 0.336
+  translation 0.392 0.025 0.56
   name "LEGO wall(224)"
 }
 DEF W224 LegoWall {
-  translation 0.952 0.025 0.336
+  translation 0.28 0.025 0.56
   name "LEGO wall(225)"
 }
 DEF W225 LegoWall {
-  translation 0.728 0.025 0.336
+  translation 0.168 0.025 0.56
   name "LEGO wall(226)"
 }
 DEF W226 LegoWall {
-  translation 0.504 0.025 0.336
+  translation 1.4 0.025 0.448
   name "LEGO wall(227)"
 }
 DEF W227 LegoWall {
-  translation 0.392 0.025 0.336
+  translation 1.1760000000000002 0.025 0.448
   name "LEGO wall(228)"
 }
 DEF W228 LegoWall {
-  translation 1.4 0.025 0.224
+  translation 1.064 0.025 0.448
   name "LEGO wall(229)"
 }
 DEF W229 LegoWall {
-  translation 1.288 0.025 0.224
+  translation 0.952 0.025 0.448
   name "LEGO wall(230)"
 }
 DEF W230 LegoWall {
-  translation 0.952 0.025 0.224
+  translation 0.8400000000000001 0.025 0.448
   name "LEGO wall(231)"
 }
 DEF W231 LegoWall {
-  translation 0.8400000000000001 0.025 0.224
+  translation 0.392 0.025 0.448
   name "LEGO wall(232)"
 }
 DEF W232 LegoWall {
-  translation 0.28 0.025 0.224
+  translation 1.624 0.025 0.336
   name "LEGO wall(233)"
 }
 DEF W233 LegoWall {
-  translation 0.168 0.025 0.224
+  translation 1.512 0.025 0.336
   name "LEGO wall(234)"
 }
 DEF W234 LegoWall {
-  translation 1.624 0.025 0.112
+  translation 0.728 0.025 0.336
   name "LEGO wall(235)"
 }
 DEF W235 LegoWall {
-  translation 1.4 0.025 0.112
+  translation 0.056 0.025 0.336
   name "LEGO wall(236)"
 }
 DEF W236 LegoWall {
-  translation 1.288 0.025 0.112
+  translation 1.512 0.025 0.224
   name "LEGO wall(237)"
 }
 DEF W237 LegoWall {
-  translation 1.064 0.025 0.112
+  translation 1.4 0.025 0.224
   name "LEGO wall(238)"
 }
 DEF W238 LegoWall {
-  translation 0.8400000000000001 0.025 0.112
+  translation 1.288 0.025 0.224
   name "LEGO wall(239)"
 }
 DEF W239 LegoWall {
-  translation 0.392 0.025 0.112
+  translation 0.8400000000000001 0.025 0.224
   name "LEGO wall(240)"
 }
 DEF W240 LegoWall {
-  translation 0.28 0.025 0.112
+  translation 0.728 0.025 0.224
   name "LEGO wall(241)"
 }
 DEF W241 LegoWall {
-  translation 0.168 0.025 0.112
+  translation 0.6160000000000001 0.025 0.224
   name "LEGO wall(242)"
 }
 DEF W242 LegoWall {
-  translation 1.512 0.025 0
+  translation 0.056 0.025 0.224
   name "LEGO wall(243)"
 }
 DEF W243 LegoWall {
-  translation 0.952 0.025 0
+  translation 0.8400000000000001 0.025 0.112
   name "LEGO wall(244)"
 }
 DEF W244 LegoWall {
-  translation 0.8400000000000001 0.025 0
+  translation 0.728 0.025 0.112
   name "LEGO wall(245)"
 }
 DEF W245 LegoWall {
-  translation 0.504 0.025 0
+  translation 0.504 0.025 0.112
   name "LEGO wall(246)"
 }
 DEF W246 LegoWall {
-  translation 0.168 0.025 0
+  translation 0.392 0.025 0.112
   name "LEGO wall(247)"
 }
 DEF W247 LegoWall {
-  translation 0.6160000000000001 0.025 0
+  translation 0.168 0.025 0.112
   name "LEGO wall(248)"
 }
 DEF W248 LegoWall {
-  translation 0.392 0.025 0
+  translation 1.512 0.025 0
   name "LEGO wall(249)"
 }
 DEF W249 LegoWall {
-  translation 0.168 0.025 0
+  translation 1.064 0.025 0
   name "LEGO wall(250)"
 }
 DEF W250 LegoWall {
-  translation 12.5 0.025 -0.2
+  translation 0.952 0.025 0
   name "LEGO wall(251)"
 }
 DEF W251 LegoWall {
-  translation 12.55 0.025 -0.2
+  translation 0.504 0.025 0
   name "LEGO wall(252)"
 }
 DEF W252 LegoWall {
-  translation 12.6 0.025 -0.2
+  translation 0.168 0.025 0
   name "LEGO wall(253)"
 }
 DEF W253 LegoWall {
@@ -1625,23 +1626,23 @@ DEF I068 LegoInterval {
   name "LEGO interval(69)"
 }
 DEF I069 LegoInterval {
-  translation 0.616 0.025 0.056
+  translation 0.728 0.025 0.056
   name "LEGO interval(70)"
 }
 DEF I070 LegoInterval {
-  translation 0.728 0.025 0.056
+  translation 0.84 0.025 0.056
   name "LEGO interval(71)"
 }
 DEF I071 LegoInterval {
-  translation 0.84 0.025 0.056
+  translation 0.9520000000000001 0.025 0.056
   name "LEGO interval(72)"
 }
 DEF I072 LegoInterval {
-  translation 0.9520000000000001 0.025 0.056
+  translation 1.064 0.025 0.056
   name "LEGO interval(73)"
 }
 DEF I073 LegoInterval {
-  translation 1.064 0.025 0.056
+  translation 1.176 0.025 0.056
   name "LEGO interval(74)"
 }
 DEF I074 LegoInterval {
@@ -1657,791 +1658,791 @@ DEF I076 LegoInterval {
   name "LEGO interval(77)"
 }
 DEF I077 LegoInterval {
-  translation 1.624 0.025 0.056
+  translation 0.056 0.025 0.168
   name "LEGO interval(78)"
 }
 DEF I078 LegoInterval {
-  translation 0.056 0.025 0.168
+  translation 0.168 0.025 0.168
   name "LEGO interval(79)"
 }
 DEF I079 LegoInterval {
-  translation 0.168 0.025 0.168
+  translation 0.392 0.025 0.168
   name "LEGO interval(80)"
 }
 DEF I080 LegoInterval {
-  translation 0.28 0.025 0.168
+  translation 0.504 0.025 0.168
   name "LEGO interval(81)"
 }
 DEF I081 LegoInterval {
-  translation 0.392 0.025 0.168
+  translation 0.616 0.025 0.168
   name "LEGO interval(82)"
 }
 DEF I082 LegoInterval {
-  translation 0.504 0.025 0.168
+  translation 0.728 0.025 0.168
   name "LEGO interval(83)"
 }
 DEF I083 LegoInterval {
-  translation 0.616 0.025 0.168
+  translation 0.84 0.025 0.168
   name "LEGO interval(84)"
 }
 DEF I084 LegoInterval {
-  translation 0.728 0.025 0.168
+  translation 0.9520000000000001 0.025 0.168
   name "LEGO interval(85)"
 }
 DEF I085 LegoInterval {
-  translation 0.84 0.025 0.168
+  translation 1.064 0.025 0.168
   name "LEGO interval(86)"
 }
 DEF I086 LegoInterval {
-  translation 0.9520000000000001 0.025 0.168
+  translation 1.176 0.025 0.168
   name "LEGO interval(87)"
 }
 DEF I087 LegoInterval {
-  translation 1.064 0.025 0.168
+  translation 1.288 0.025 0.168
   name "LEGO interval(88)"
 }
 DEF I088 LegoInterval {
-  translation 1.176 0.025 0.168
+  translation 1.4000000000000001 0.025 0.168
   name "LEGO interval(89)"
 }
 DEF I089 LegoInterval {
-  translation 1.288 0.025 0.168
+  translation 1.512 0.025 0.168
   name "LEGO interval(90)"
 }
 DEF I090 LegoInterval {
-  translation 1.4000000000000001 0.025 0.168
+  translation 1.624 0.025 0.168
   name "LEGO interval(91)"
 }
 DEF I091 LegoInterval {
-  translation 1.512 0.025 0.168
+  translation 0.056 0.025 0.28
   name "LEGO interval(92)"
 }
 DEF I092 LegoInterval {
-  translation 1.624 0.025 0.168
+  translation 0.168 0.025 0.28
   name "LEGO interval(93)"
 }
 DEF I093 LegoInterval {
-  translation 0.056 0.025 0.28
+  translation 0.28 0.025 0.28
   name "LEGO interval(94)"
 }
 DEF I094 LegoInterval {
-  translation 0.168 0.025 0.28
+  translation 0.392 0.025 0.28
   name "LEGO interval(95)"
 }
 DEF I095 LegoInterval {
-  translation 0.28 0.025 0.28
+  translation 0.504 0.025 0.28
   name "LEGO interval(96)"
 }
 DEF I096 LegoInterval {
-  translation 0.392 0.025 0.28
+  translation 0.616 0.025 0.28
   name "LEGO interval(97)"
 }
 DEF I097 LegoInterval {
-  translation 0.504 0.025 0.28
+  translation 0.728 0.025 0.28
   name "LEGO interval(98)"
 }
 DEF I098 LegoInterval {
-  translation 0.616 0.025 0.28
+  translation 0.84 0.025 0.28
   name "LEGO interval(99)"
 }
 DEF I099 LegoInterval {
-  translation 0.728 0.025 0.28
+  translation 0.9520000000000001 0.025 0.28
   name "LEGO interval(100)"
 }
 DEF I100 LegoInterval {
-  translation 0.84 0.025 0.28
+  translation 1.064 0.025 0.28
   name "LEGO interval(101)"
 }
 DEF I101 LegoInterval {
-  translation 0.9520000000000001 0.025 0.28
+  translation 1.176 0.025 0.28
   name "LEGO interval(102)"
 }
 DEF I102 LegoInterval {
-  translation 1.064 0.025 0.28
+  translation 1.288 0.025 0.28
   name "LEGO interval(103)"
 }
 DEF I103 LegoInterval {
-  translation 1.176 0.025 0.28
+  translation 1.4000000000000001 0.025 0.28
   name "LEGO interval(104)"
 }
 DEF I104 LegoInterval {
-  translation 1.288 0.025 0.28
+  translation 1.512 0.025 0.28
   name "LEGO interval(105)"
 }
 DEF I105 LegoInterval {
-  translation 1.4000000000000001 0.025 0.28
+  translation 1.624 0.025 0.28
   name "LEGO interval(106)"
 }
 DEF I106 LegoInterval {
-  translation 1.512 0.025 0.28
+  translation 0.056 0.025 0.392
   name "LEGO interval(107)"
 }
 DEF I107 LegoInterval {
-  translation 1.624 0.025 0.28
+  translation 0.168 0.025 0.392
   name "LEGO interval(108)"
 }
 DEF I108 LegoInterval {
-  translation 0.056 0.025 0.392
+  translation 0.392 0.025 0.392
   name "LEGO interval(109)"
 }
 DEF I109 LegoInterval {
-  translation 0.28 0.025 0.392
+  translation 0.504 0.025 0.392
   name "LEGO interval(110)"
 }
 DEF I110 LegoInterval {
-  translation 0.392 0.025 0.392
+  translation 0.728 0.025 0.392
   name "LEGO interval(111)"
 }
 DEF I111 LegoInterval {
-  translation 0.504 0.025 0.392
+  translation 0.84 0.025 0.392
   name "LEGO interval(112)"
 }
 DEF I112 LegoInterval {
-  translation 0.616 0.025 0.392
+  translation 0.9520000000000001 0.025 0.392
   name "LEGO interval(113)"
 }
 DEF I113 LegoInterval {
-  translation 0.728 0.025 0.392
+  translation 1.064 0.025 0.392
   name "LEGO interval(114)"
 }
 DEF I114 LegoInterval {
-  translation 0.84 0.025 0.392
+  translation 1.176 0.025 0.392
   name "LEGO interval(115)"
 }
 DEF I115 LegoInterval {
-  translation 0.9520000000000001 0.025 0.392
+  translation 1.4000000000000001 0.025 0.392
   name "LEGO interval(116)"
 }
 DEF I116 LegoInterval {
-  translation 1.064 0.025 0.392
+  translation 1.512 0.025 0.392
   name "LEGO interval(117)"
 }
 DEF I117 LegoInterval {
-  translation 1.176 0.025 0.392
+  translation 1.624 0.025 0.392
   name "LEGO interval(118)"
 }
 DEF I118 LegoInterval {
-  translation 1.288 0.025 0.392
+  translation 0.056 0.025 0.504
   name "LEGO interval(119)"
 }
 DEF I119 LegoInterval {
-  translation 1.4000000000000001 0.025 0.392
+  translation 0.168 0.025 0.504
   name "LEGO interval(120)"
 }
 DEF I120 LegoInterval {
-  translation 1.512 0.025 0.392
+  translation 0.28 0.025 0.504
   name "LEGO interval(121)"
 }
 DEF I121 LegoInterval {
-  translation 1.624 0.025 0.392
+  translation 0.392 0.025 0.504
   name "LEGO interval(122)"
 }
 DEF I122 LegoInterval {
-  translation 0.056 0.025 0.504
+  translation 0.504 0.025 0.504
   name "LEGO interval(123)"
 }
 DEF I123 LegoInterval {
-  translation 0.168 0.025 0.504
+  translation 0.616 0.025 0.504
   name "LEGO interval(124)"
 }
 DEF I124 LegoInterval {
-  translation 0.392 0.025 0.504
+  translation 0.728 0.025 0.504
   name "LEGO interval(125)"
 }
 DEF I125 LegoInterval {
-  translation 0.504 0.025 0.504
+  translation 0.84 0.025 0.504
   name "LEGO interval(126)"
 }
 DEF I126 LegoInterval {
-  translation 0.616 0.025 0.504
+  translation 0.9520000000000001 0.025 0.504
   name "LEGO interval(127)"
 }
 DEF I127 LegoInterval {
-  translation 0.728 0.025 0.504
+  translation 1.064 0.025 0.504
   name "LEGO interval(128)"
 }
 DEF I128 LegoInterval {
-  translation 0.84 0.025 0.504
+  translation 1.176 0.025 0.504
   name "LEGO interval(129)"
 }
 DEF I129 LegoInterval {
-  translation 0.9520000000000001 0.025 0.504
+  translation 1.288 0.025 0.504
   name "LEGO interval(130)"
 }
 DEF I130 LegoInterval {
-  translation 1.064 0.025 0.504
+  translation 1.4000000000000001 0.025 0.504
   name "LEGO interval(131)"
 }
 DEF I131 LegoInterval {
-  translation 1.176 0.025 0.504
+  translation 1.624 0.025 0.504
   name "LEGO interval(132)"
 }
 DEF I132 LegoInterval {
-  translation 1.288 0.025 0.504
+  translation 0.056 0.025 0.616
   name "LEGO interval(133)"
 }
 DEF I133 LegoInterval {
-  translation 1.4000000000000001 0.025 0.504
+  translation 0.168 0.025 0.616
   name "LEGO interval(134)"
 }
 DEF I134 LegoInterval {
-  translation 1.512 0.025 0.504
+  translation 0.28 0.025 0.616
   name "LEGO interval(135)"
 }
 DEF I135 LegoInterval {
-  translation 1.624 0.025 0.504
+  translation 0.392 0.025 0.616
   name "LEGO interval(136)"
 }
 DEF I136 LegoInterval {
-  translation 0.056 0.025 0.616
+  translation 0.504 0.025 0.616
   name "LEGO interval(137)"
 }
 DEF I137 LegoInterval {
-  translation 0.168 0.025 0.616
+  translation 0.616 0.025 0.616
   name "LEGO interval(138)"
 }
 DEF I138 LegoInterval {
-  translation 0.28 0.025 0.616
+  translation 0.728 0.025 0.616
   name "LEGO interval(139)"
 }
 DEF I139 LegoInterval {
-  translation 0.392 0.025 0.616
+  translation 0.84 0.025 0.616
   name "LEGO interval(140)"
 }
 DEF I140 LegoInterval {
-  translation 0.504 0.025 0.616
+  translation 0.9520000000000001 0.025 0.616
   name "LEGO interval(141)"
 }
 DEF I141 LegoInterval {
-  translation 0.616 0.025 0.616
+  translation 1.064 0.025 0.616
   name "LEGO interval(142)"
 }
 DEF I142 LegoInterval {
-  translation 0.728 0.025 0.616
+  translation 1.176 0.025 0.616
   name "LEGO interval(143)"
 }
 DEF I143 LegoInterval {
-  translation 0.84 0.025 0.616
+  translation 1.288 0.025 0.616
   name "LEGO interval(144)"
 }
 DEF I144 LegoInterval {
-  translation 0.9520000000000001 0.025 0.616
+  translation 1.4000000000000001 0.025 0.616
   name "LEGO interval(145)"
 }
 DEF I145 LegoInterval {
-  translation 1.064 0.025 0.616
+  translation 1.512 0.025 0.616
   name "LEGO interval(146)"
 }
 DEF I146 LegoInterval {
-  translation 1.176 0.025 0.616
+  translation 1.624 0.025 0.616
   name "LEGO interval(147)"
 }
 DEF I147 LegoInterval {
-  translation 1.288 0.025 0.616
+  translation 0.056 0.025 0.728
   name "LEGO interval(148)"
 }
 DEF I148 LegoInterval {
-  translation 1.4000000000000001 0.025 0.616
+  translation 0.168 0.025 0.728
   name "LEGO interval(149)"
 }
 DEF I149 LegoInterval {
-  translation 1.512 0.025 0.616
+  translation 0.392 0.025 0.728
   name "LEGO interval(150)"
 }
 DEF I150 LegoInterval {
-  translation 1.624 0.025 0.616
+  translation 0.504 0.025 0.728
   name "LEGO interval(151)"
 }
 DEF I151 LegoInterval {
-  translation 0.056 0.025 0.728
+  translation 0.616 0.025 0.728
   name "LEGO interval(152)"
 }
 DEF I152 LegoInterval {
-  translation 0.168 0.025 0.728
+  translation 0.728 0.025 0.728
   name "LEGO interval(153)"
 }
 DEF I153 LegoInterval {
-  translation 0.28 0.025 0.728
+  translation 0.84 0.025 0.728
   name "LEGO interval(154)"
 }
 DEF I154 LegoInterval {
-  translation 0.616 0.025 0.728
+  translation 0.9520000000000001 0.025 0.728
   name "LEGO interval(155)"
 }
 DEF I155 LegoInterval {
-  translation 0.728 0.025 0.728
+  translation 1.064 0.025 0.728
   name "LEGO interval(156)"
 }
 DEF I156 LegoInterval {
-  translation 0.84 0.025 0.728
+  translation 1.288 0.025 0.728
   name "LEGO interval(157)"
 }
 DEF I157 LegoInterval {
-  translation 0.9520000000000001 0.025 0.728
+  translation 1.4000000000000001 0.025 0.728
   name "LEGO interval(158)"
 }
 DEF I158 LegoInterval {
-  translation 1.064 0.025 0.728
+  translation 1.624 0.025 0.728
   name "LEGO interval(159)"
 }
 DEF I159 LegoInterval {
-  translation 1.176 0.025 0.728
+  translation 0.056 0.025 0.84
   name "LEGO interval(160)"
 }
 DEF I160 LegoInterval {
-  translation 1.288 0.025 0.728
+  translation 0.28 0.025 0.84
   name "LEGO interval(161)"
 }
 DEF I161 LegoInterval {
-  translation 1.4000000000000001 0.025 0.728
+  translation 0.392 0.025 0.84
   name "LEGO interval(162)"
 }
 DEF I162 LegoInterval {
-  translation 1.512 0.025 0.728
+  translation 0.504 0.025 0.84
   name "LEGO interval(163)"
 }
 DEF I163 LegoInterval {
-  translation 1.624 0.025 0.728
+  translation 0.616 0.025 0.84
   name "LEGO interval(164)"
 }
 DEF I164 LegoInterval {
-  translation 0.056 0.025 0.84
+  translation 0.728 0.025 0.84
   name "LEGO interval(165)"
 }
 DEF I165 LegoInterval {
-  translation 0.168 0.025 0.84
+  translation 0.84 0.025 0.84
   name "LEGO interval(166)"
 }
 DEF I166 LegoInterval {
-  translation 0.28 0.025 0.84
+  translation 0.9520000000000001 0.025 0.84
   name "LEGO interval(167)"
 }
 DEF I167 LegoInterval {
-  translation 0.392 0.025 0.84
+  translation 1.064 0.025 0.84
   name "LEGO interval(168)"
 }
 DEF I168 LegoInterval {
-  translation 0.504 0.025 0.84
+  translation 1.176 0.025 0.84
   name "LEGO interval(169)"
 }
 DEF I169 LegoInterval {
-  translation 0.728 0.025 0.84
+  translation 1.288 0.025 0.84
   name "LEGO interval(170)"
 }
 DEF I170 LegoInterval {
-  translation 0.84 0.025 0.84
+  translation 1.4000000000000001 0.025 0.84
   name "LEGO interval(171)"
 }
 DEF I171 LegoInterval {
-  translation 0.9520000000000001 0.025 0.84
+  translation 1.512 0.025 0.84
   name "LEGO interval(172)"
 }
 DEF I172 LegoInterval {
-  translation 1.064 0.025 0.84
+  translation 1.624 0.025 0.84
   name "LEGO interval(173)"
 }
 DEF I173 LegoInterval {
-  translation 1.176 0.025 0.84
+  translation 0.056 0.025 0.9520000000000001
   name "LEGO interval(174)"
 }
 DEF I174 LegoInterval {
-  translation 1.288 0.025 0.84
+  translation 0.168 0.025 0.9520000000000001
   name "LEGO interval(175)"
 }
 DEF I175 LegoInterval {
-  translation 1.4000000000000001 0.025 0.84
+  translation 0.28 0.025 0.9520000000000001
   name "LEGO interval(176)"
 }
 DEF I176 LegoInterval {
-  translation 1.512 0.025 0.84
+  translation 0.392 0.025 0.9520000000000001
   name "LEGO interval(177)"
 }
 DEF I177 LegoInterval {
-  translation 1.624 0.025 0.84
+  translation 0.504 0.025 0.9520000000000001
   name "LEGO interval(178)"
 }
 DEF I178 LegoInterval {
-  translation 0.056 0.025 0.9520000000000001
+  translation 0.616 0.025 0.9520000000000001
   name "LEGO interval(179)"
 }
 DEF I179 LegoInterval {
-  translation 0.168 0.025 0.9520000000000001
+  translation 0.728 0.025 0.9520000000000001
   name "LEGO interval(180)"
 }
 DEF I180 LegoInterval {
-  translation 0.28 0.025 0.9520000000000001
+  translation 0.84 0.025 0.9520000000000001
   name "LEGO interval(181)"
 }
 DEF I181 LegoInterval {
-  translation 0.392 0.025 0.9520000000000001
+  translation 1.064 0.025 0.9520000000000001
   name "LEGO interval(182)"
 }
 DEF I182 LegoInterval {
-  translation 0.504 0.025 0.9520000000000001
+  translation 1.176 0.025 0.9520000000000001
   name "LEGO interval(183)"
 }
 DEF I183 LegoInterval {
-  translation 0.616 0.025 0.9520000000000001
+  translation 1.288 0.025 0.9520000000000001
   name "LEGO interval(184)"
 }
 DEF I184 LegoInterval {
-  translation 0.728 0.025 0.9520000000000001
+  translation 1.4000000000000001 0.025 0.9520000000000001
   name "LEGO interval(185)"
 }
 DEF I185 LegoInterval {
-  translation 0.84 0.025 0.9520000000000001
+  translation 1.512 0.025 0.9520000000000001
   name "LEGO interval(186)"
 }
 DEF I186 LegoInterval {
-  translation 0.9520000000000001 0.025 0.9520000000000001
+  translation 1.624 0.025 0.9520000000000001
   name "LEGO interval(187)"
 }
 DEF I187 LegoInterval {
-  translation 1.064 0.025 0.9520000000000001
+  translation 0.056 0.025 1.064
   name "LEGO interval(188)"
 }
 DEF I188 LegoInterval {
-  translation 1.288 0.025 0.9520000000000001
+  translation 0.28 0.025 1.064
   name "LEGO interval(189)"
 }
 DEF I189 LegoInterval {
-  translation 1.512 0.025 0.9520000000000001
+  translation 0.392 0.025 1.064
   name "LEGO interval(190)"
 }
 DEF I190 LegoInterval {
-  translation 1.624 0.025 0.9520000000000001
+  translation 0.504 0.025 1.064
   name "LEGO interval(191)"
 }
 DEF I191 LegoInterval {
-  translation 0.056 0.025 1.064
+  translation 0.616 0.025 1.064
   name "LEGO interval(192)"
 }
 DEF I192 LegoInterval {
-  translation 0.168 0.025 1.064
+  translation 0.728 0.025 1.064
   name "LEGO interval(193)"
 }
 DEF I193 LegoInterval {
-  translation 0.28 0.025 1.064
+  translation 0.84 0.025 1.064
   name "LEGO interval(194)"
 }
 DEF I194 LegoInterval {
-  translation 0.392 0.025 1.064
+  translation 0.9520000000000001 0.025 1.064
   name "LEGO interval(195)"
 }
 DEF I195 LegoInterval {
-  translation 0.504 0.025 1.064
+  translation 1.064 0.025 1.064
   name "LEGO interval(196)"
 }
 DEF I196 LegoInterval {
-  translation 0.616 0.025 1.064
+  translation 1.288 0.025 1.064
   name "LEGO interval(197)"
 }
 DEF I197 LegoInterval {
-  translation 0.728 0.025 1.064
+  translation 1.4000000000000001 0.025 1.064
   name "LEGO interval(198)"
 }
 DEF I198 LegoInterval {
-  translation 0.84 0.025 1.064
+  translation 1.512 0.025 1.064
   name "LEGO interval(199)"
 }
 DEF I199 LegoInterval {
-  translation 0.9520000000000001 0.025 1.064
+  translation 1.624 0.025 1.064
   name "LEGO interval(200)"
 }
 DEF I200 LegoInterval {
-  translation 1.064 0.025 1.064
+  translation 0.056 0.025 1.176
   name "LEGO interval(201)"
 }
 DEF I201 LegoInterval {
-  translation 1.288 0.025 1.064
+  translation 0.28 0.025 1.176
   name "LEGO interval(202)"
 }
 DEF I202 LegoInterval {
-  translation 1.4000000000000001 0.025 1.064
+  translation 0.392 0.025 1.176
   name "LEGO interval(203)"
 }
 DEF I203 LegoInterval {
-  translation 1.624 0.025 1.064
+  translation 0.504 0.025 1.176
   name "LEGO interval(204)"
 }
 DEF I204 LegoInterval {
-  translation 0.056 0.025 1.176
+  translation 0.616 0.025 1.176
   name "LEGO interval(205)"
 }
 DEF I205 LegoInterval {
-  translation 0.168 0.025 1.176
+  translation 0.728 0.025 1.176
   name "LEGO interval(206)"
 }
 DEF I206 LegoInterval {
-  translation 0.28 0.025 1.176
+  translation 0.84 0.025 1.176
   name "LEGO interval(207)"
 }
 DEF I207 LegoInterval {
-  translation 0.504 0.025 1.176
+  translation 0.9520000000000001 0.025 1.176
   name "LEGO interval(208)"
 }
 DEF I208 LegoInterval {
-  translation 0.616 0.025 1.176
+  translation 1.064 0.025 1.176
   name "LEGO interval(209)"
 }
 DEF I209 LegoInterval {
-  translation 0.728 0.025 1.176
+  translation 1.176 0.025 1.176
   name "LEGO interval(210)"
 }
 DEF I210 LegoInterval {
-  translation 0.84 0.025 1.176
+  translation 1.288 0.025 1.176
   name "LEGO interval(211)"
 }
 DEF I211 LegoInterval {
-  translation 0.9520000000000001 0.025 1.176
+  translation 1.4000000000000001 0.025 1.176
   name "LEGO interval(212)"
 }
 DEF I212 LegoInterval {
-  translation 1.064 0.025 1.176
+  translation 1.512 0.025 1.176
   name "LEGO interval(213)"
 }
 DEF I213 LegoInterval {
-  translation 1.288 0.025 1.176
+  translation 1.624 0.025 1.176
   name "LEGO interval(214)"
 }
 DEF I214 LegoInterval {
-  translation 1.4000000000000001 0.025 1.176
+  translation 0.056 0.025 1.288
   name "LEGO interval(215)"
 }
 DEF I215 LegoInterval {
-  translation 1.512 0.025 1.176
+  translation 0.168 0.025 1.288
   name "LEGO interval(216)"
 }
 DEF I216 LegoInterval {
-  translation 1.624 0.025 1.176
+  translation 0.28 0.025 1.288
   name "LEGO interval(217)"
 }
 DEF I217 LegoInterval {
-  translation 0.056 0.025 1.288
+  translation 0.392 0.025 1.288
   name "LEGO interval(218)"
 }
 DEF I218 LegoInterval {
-  translation 0.168 0.025 1.288
+  translation 0.504 0.025 1.288
   name "LEGO interval(219)"
 }
 DEF I219 LegoInterval {
-  translation 0.28 0.025 1.288
+  translation 0.616 0.025 1.288
   name "LEGO interval(220)"
 }
 DEF I220 LegoInterval {
-  translation 0.392 0.025 1.288
+  translation 0.728 0.025 1.288
   name "LEGO interval(221)"
 }
 DEF I221 LegoInterval {
-  translation 0.504 0.025 1.288
+  translation 0.84 0.025 1.288
   name "LEGO interval(222)"
 }
 DEF I222 LegoInterval {
-  translation 0.616 0.025 1.288
+  translation 0.9520000000000001 0.025 1.288
   name "LEGO interval(223)"
 }
 DEF I223 LegoInterval {
-  translation 0.728 0.025 1.288
+  translation 1.064 0.025 1.288
   name "LEGO interval(224)"
 }
 DEF I224 LegoInterval {
-  translation 0.84 0.025 1.288
+  translation 1.176 0.025 1.288
   name "LEGO interval(225)"
 }
 DEF I225 LegoInterval {
-  translation 0.9520000000000001 0.025 1.288
+  translation 1.288 0.025 1.288
   name "LEGO interval(226)"
 }
 DEF I226 LegoInterval {
-  translation 1.064 0.025 1.288
+  translation 1.4000000000000001 0.025 1.288
   name "LEGO interval(227)"
 }
 DEF I227 LegoInterval {
-  translation 1.176 0.025 1.288
+  translation 1.512 0.025 1.288
   name "LEGO interval(228)"
 }
 DEF I228 LegoInterval {
-  translation 1.288 0.025 1.288
+  translation 1.624 0.025 1.288
   name "LEGO interval(229)"
 }
 DEF I229 LegoInterval {
-  translation 1.4000000000000001 0.025 1.288
+  translation 0.056 0.025 1.4000000000000001
   name "LEGO interval(230)"
 }
 DEF I230 LegoInterval {
-  translation 1.512 0.025 1.288
+  translation 0.168 0.025 1.4000000000000001
   name "LEGO interval(231)"
 }
 DEF I231 LegoInterval {
-  translation 1.624 0.025 1.288
+  translation 0.28 0.025 1.4000000000000001
   name "LEGO interval(232)"
 }
 DEF I232 LegoInterval {
-  translation 0.056 0.025 1.4000000000000001
+  translation 0.392 0.025 1.4000000000000001
   name "LEGO interval(233)"
 }
 DEF I233 LegoInterval {
-  translation 0.168 0.025 1.4000000000000001
+  translation 0.616 0.025 1.4000000000000001
   name "LEGO interval(234)"
 }
 DEF I234 LegoInterval {
-  translation 0.28 0.025 1.4000000000000001
+  translation 0.728 0.025 1.4000000000000001
   name "LEGO interval(235)"
 }
 DEF I235 LegoInterval {
-  translation 0.392 0.025 1.4000000000000001
+  translation 0.84 0.025 1.4000000000000001
   name "LEGO interval(236)"
 }
 DEF I236 LegoInterval {
-  translation 0.504 0.025 1.4000000000000001
+  translation 0.9520000000000001 0.025 1.4000000000000001
   name "LEGO interval(237)"
 }
 DEF I237 LegoInterval {
-  translation 0.728 0.025 1.4000000000000001
+  translation 1.064 0.025 1.4000000000000001
   name "LEGO interval(238)"
 }
 DEF I238 LegoInterval {
-  translation 0.84 0.025 1.4000000000000001
+  translation 1.176 0.025 1.4000000000000001
   name "LEGO interval(239)"
 }
 DEF I239 LegoInterval {
-  translation 0.9520000000000001 0.025 1.4000000000000001
+  translation 1.288 0.025 1.4000000000000001
   name "LEGO interval(240)"
 }
 DEF I240 LegoInterval {
-  translation 1.064 0.025 1.4000000000000001
+  translation 1.4000000000000001 0.025 1.4000000000000001
   name "LEGO interval(241)"
 }
 DEF I241 LegoInterval {
-  translation 1.176 0.025 1.4000000000000001
+  translation 1.512 0.025 1.4000000000000001
   name "LEGO interval(242)"
 }
 DEF I242 LegoInterval {
-  translation 1.288 0.025 1.4000000000000001
+  translation 1.624 0.025 1.4000000000000001
   name "LEGO interval(243)"
 }
 DEF I243 LegoInterval {
-  translation 1.4000000000000001 0.025 1.4000000000000001
+  translation 0.056 0.025 1.512
   name "LEGO interval(244)"
 }
 DEF I244 LegoInterval {
-  translation 1.512 0.025 1.4000000000000001
+  translation 0.168 0.025 1.512
   name "LEGO interval(245)"
 }
 DEF I245 LegoInterval {
-  translation 1.624 0.025 1.4000000000000001
+  translation 0.28 0.025 1.512
   name "LEGO interval(246)"
 }
 DEF I246 LegoInterval {
-  translation 0.056 0.025 1.512
+  translation 0.392 0.025 1.512
   name "LEGO interval(247)"
 }
 DEF I247 LegoInterval {
-  translation 0.168 0.025 1.512
+  translation 0.504 0.025 1.512
   name "LEGO interval(248)"
 }
 DEF I248 LegoInterval {
-  translation 0.28 0.025 1.512
+  translation 0.616 0.025 1.512
   name "LEGO interval(249)"
 }
 DEF I249 LegoInterval {
-  translation 0.392 0.025 1.512
+  translation 0.728 0.025 1.512
   name "LEGO interval(250)"
 }
 DEF I250 LegoInterval {
-  translation 0.504 0.025 1.512
+  translation 0.84 0.025 1.512
   name "LEGO interval(251)"
 }
 DEF I251 LegoInterval {
-  translation 0.616 0.025 1.512
+  translation 0.9520000000000001 0.025 1.512
   name "LEGO interval(252)"
 }
 DEF I252 LegoInterval {
-  translation 0.728 0.025 1.512
+  translation 1.064 0.025 1.512
   name "LEGO interval(253)"
 }
 DEF I253 LegoInterval {
-  translation 0.84 0.025 1.512
+  translation 1.176 0.025 1.512
   name "LEGO interval(254)"
 }
 DEF I254 LegoInterval {
-  translation 0.9520000000000001 0.025 1.512
+  translation 1.288 0.025 1.512
   name "LEGO interval(255)"
 }
 DEF I255 LegoInterval {
-  translation 1.064 0.025 1.512
+  translation 1.4000000000000001 0.025 1.512
   name "LEGO interval(256)"
 }
 DEF I256 LegoInterval {
-  translation 1.176 0.025 1.512
+  translation 1.512 0.025 1.512
   name "LEGO interval(257)"
 }
 DEF I257 LegoInterval {
-  translation 1.288 0.025 1.512
+  translation 1.624 0.025 1.512
   name "LEGO interval(258)"
 }
 DEF I258 LegoInterval {
-  translation 1.4000000000000001 0.025 1.512
+  translation 0.168 0.025 1.624
   name "LEGO interval(259)"
 }
 DEF I259 LegoInterval {
-  translation 1.512 0.025 1.512
+  translation 0.28 0.025 1.624
   name "LEGO interval(260)"
 }
 DEF I260 LegoInterval {
-  translation 1.624 0.025 1.512
+  translation 0.392 0.025 1.624
   name "LEGO interval(261)"
 }
 DEF I261 LegoInterval {
-  translation 0.056 0.025 1.624
+  translation 0.504 0.025 1.624
   name "LEGO interval(262)"
 }
 DEF I262 LegoInterval {
-  translation 0.28 0.025 1.624
+  translation 0.616 0.025 1.624
   name "LEGO interval(263)"
 }
 DEF I263 LegoInterval {
-  translation 0.392 0.025 1.624
+  translation 0.728 0.025 1.624
   name "LEGO interval(264)"
 }
 DEF I264 LegoInterval {
-  translation 0.504 0.025 1.624
+  translation 0.84 0.025 1.624
   name "LEGO interval(265)"
 }
 DEF I265 LegoInterval {
-  translation 0.728 0.025 1.624
+  translation 0.9520000000000001 0.025 1.624
   name "LEGO interval(266)"
 }
 DEF I266 LegoInterval {
-  translation 0.84 0.025 1.624
+  translation 1.064 0.025 1.624
   name "LEGO interval(267)"
 }
 DEF I267 LegoInterval {
-  translation 0.9520000000000001 0.025 1.624
+  translation 1.176 0.025 1.624
   name "LEGO interval(268)"
 }
 DEF I268 LegoInterval {
-  translation 1.064 0.025 1.624
+  translation 1.288 0.025 1.624
   name "LEGO interval(269)"
 }
 DEF I269 LegoInterval {
-  translation 1.176 0.025 1.624
+  translation 1.4000000000000001 0.025 1.624
   name "LEGO interval(270)"
 }
 DEF I270 LegoInterval {
-  translation 1.288 0.025 1.624
+  translation 1.512 0.025 1.624
   name "LEGO interval(271)"
 }
 DEF I271 LegoInterval {
-  translation 1.4000000000000001 0.025 1.624
+  translation 1.624 0.025 1.624
   name "LEGO interval(272)"
 }
 DEF I272 LegoInterval {
-  translation 1.512 0.025 1.624
+  translation 13.6 0.025 -0.3
   name "LEGO interval(273)"
 }
 DEF I273 LegoInterval {
-  translation 1.624 0.025 1.624
+  translation 13.65 0.025 -0.3
   name "LEGO interval(274)"
 }
 DEF I274 LegoInterval {
@@ -2553,39 +2554,35 @@ DEF I300 LegoInterval {
   name "LEGO interval(301)"
 }
 DEF F0 NXTFeeder {
-  translation 1.12 0 0.448
-  rotation 0 1 0 -1.5707963267948966
+  translation 0 0 -0.4
   name "NXT feeder(1)"
 }
 DEF F1 NXTFeeder {
-  translation 0.112 0 0.896
+  translation 0.2 0 -0.4
   name "NXT feeder(2)"
 }
 DEF F2 NXTFeeder {
-  translation 1.568 0 1.12
-  rotation 0 1 0 -1.5707963267948966
+  translation 0.4 0 -0.4
   name "NXT feeder(3)"
 }
 DEF F3 NXTFeeder {
-  translation 0.224 0 1.344
+  translation 0.6 0 -0.4
 }
 DEF R0 E-puck {
-  hidden position_0_0 12.4019770916865
-  hidden position_0_1 10.979554467054415
-  hidden linearVelocity_0 0.0023956945571446736 -6.411064857266672e-08 0.03713026463190079
-  hidden angularVelocity_0 -0.006402641655848914 0.007783489301995183 0.00040440871427701523
-  hidden rotation_1 1 0 0 0.1643935226726732
-  hidden linearVelocity_1 0.0023811033397902544 -1.9001733567073074e-07 0.03689622566477213
-  hidden angularVelocity_1 1.8441957308086219 0.007801171835172939 -0.11898941838601915
-  hidden rotation_2 1 0 0 1.586816147304758
-  hidden linearVelocity_2 0.0024064000857403015 1.8692999008506975e-07 0.037300271392569986
-  hidden angularVelocity_2 1.8658270307670877 0.00780181621183044 -0.12038541667506356
-  translation 0.011350948022350567 -0.00013194767299070688 0.22333577742562707
-  rotation 3.239367443433305e-05 0.999999541973271 0.0009565583611735035 -3.0771185706397706
+  hidden position_0_0 1.5161975760087535e-08
+  hidden position_0_1 1.516200123320759e-08
+  hidden linearVelocity_0 2.108855082007296e-09 0.00020281096853980813 -1.8058381694450935e-08
+  hidden angularVelocity_0 -1.2039889133053538e-06 2.479936651393046e-12 6.146756483869608e-08
+  hidden linearVelocity_1 1.801720627102361e-09 0.0002028810507840038 -2.4356696341006194e-08
+  hidden angularVelocity_1 -1.2013653405417313e-06 1.4696531264431645e-12 -9.009212129972463e-08
+  hidden linearVelocity_2 1.80175381828967e-09 0.00020294243050466768 -2.38030865023925e-08
+  hidden angularVelocity_2 -1.2066129048296025e-06 1.4843837331069402e-12 -9.009211280651734e-08
+  translation 1.9768343549732086e-11 -0.0001449567952067684 -2.926075877819885e-12
+  rotation 3.3098355322779706e-06 0.9999999999890431 -3.3104146166076222e-06 -1.5707963268057923
   name "Rat0"
   controller "Rat0"
   battery [
-    192.39873991640852, 100, 1000
+    199.6092800000003, 100, 1000
   ]
   turretSlot [
     DEF EPUCK_FLAG E-puckFlag {
@@ -2593,16 +2590,20 @@ DEF R0 E-puck {
   ]
 }
 DEF R1 E-puck {
-  hidden position_0_0 3.071352278665058e-08
-  hidden position_0_1 3.071360339634901e-08
-  hidden rotation_1 -1 0 0 2.9802322387695313e-08
-  hidden rotation_2 -1 0 0 2.9802322387695313e-08
-  translation 0.19999999999718585 -0.00013198723261919829 -0.6000000000510534
-  rotation -0.00019618936430481132 -1.765608568437852e-09 -0.9999999807548665 -6.697059647278528e-06
+  hidden position_0_0 -1.516197234882968e-08
+  hidden position_0_1 -1.5162000110485026e-08
+  hidden linearVelocity_0 -1.8058382010023395e-08 0.00020281096853779455 2.108855450309861e-09
+  hidden angularVelocity_0 -6.146752503164955e-08 -2.4536814523211578e-12 1.2039887903159416e-06
+  hidden linearVelocity_1 -2.4356694718974754e-08 0.0002028810507828397 1.8017209793617244e-09
+  hidden angularVelocity_1 9.009213921463436e-08 -1.4475847762528177e-12 1.20136531335263e-06
+  hidden linearVelocity_2 -2.3803088219725028e-08 0.00020294243050352466 1.8017537999618309e-09
+  hidden angularVelocity_2 9.00921116229985e-08 -1.4593335423348937e-12 1.2066130475725731e-06
+  translation 0.19999999999707388 -0.00014495679520662615 -0.5999999999802317
+  rotation 8.747177542470999e-05 9.5713483956636e-09 -0.9999999961743442 -6.6202501753292546e-06
   name "Rat1"
   controller "Rat1"
   battery [
-    192.3987200000078, 100, 1000
+    199.6092800000003, 100, 1000
   ]
   turretSlot [
     DEF EPUCK_FLAG E-puckFlag {
@@ -2618,6 +2619,7 @@ Robot {
   children [
     DEF GROUND_SHAPE Shape {
       appearance PBRAppearance {
+        baseColor 0 0 0
         baseColorMap ImageTexture {
           url [
             "textures/ground_tiles.png"

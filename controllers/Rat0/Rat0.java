@@ -77,7 +77,8 @@ public class Rat0 extends Robot {
     double leftSpeed, rightSpeed;
 
     while (step(timeStep) != -1) {
-
+      // System.out.println("distance: "+ distance[6]);
+      
       // read sensor information
       image = camera.getImage();
       for(int i=0;i<8;i++) distance[i] = distanceSensors[i].getValue();
@@ -87,74 +88,77 @@ public class Rat0 extends Robot {
       // obstacle avoidance behavior
       leftSpeed  = maxSpeed;
       rightSpeed = maxSpeed;
-      /*
+      
       for (int i=0;i<8;i++) {
         leftSpeed  -= (slowMotionWeights[i]+collisionAvoidanceWeights[i])*distance[i];
         rightSpeed -= (slowMotionWeights[i]-collisionAvoidanceWeights[i])*distance[i];
       }
       // return either to left or to right when there is an obstacle
-      if (distance[6]+distance[7] > 1800 || distance[0]+distance[1] > 1800) {
-        if (!turn) {
-          turn = true;
-          right = r.nextBoolean();
-        }
-        if (right) {
-          ledValue[2] = 1;
-          leftSpeed  =  maxSpeed;
-          rightSpeed = -maxSpeed;
-        } else {
-          ledValue[6] = 1;
-          leftSpeed  = -maxSpeed;
-          rightSpeed =  maxSpeed;
-        }
-      } else {
-        turn=false;
-      }
+      // if (distance[6]+distance[7] > 1800 || distance[0]+distance[1] > 1800) {
+
+        
+
+      //   if (!turn) {
+      //     turn = true;
+      //     right = r.nextBoolean();
+      //   }
+      //   if (right) {
+      //     ledValue[2] = 1;
+      //     leftSpeed  =  maxSpeed;
+      //     rightSpeed = -maxSpeed;
+      //   } else {
+      //     ledValue[6] = 1;
+      //     leftSpeed  = -maxSpeed;
+      //     rightSpeed =  maxSpeed;
+      //   }
+      // } else {
+      //   turn=false;
+      // }
       // vision
-      int blobX=0,blobY=0,blobCounter=0;
-      // looking for an alight feeder
-      for(int x=0; x<cameraWidth; x++) for(int y=cameraWidth/3; y<2*cameraWidth/3; y++) {
-        int pixel = image[y * cameraWidth + x];
-        if (Camera.pixelGetGreen(pixel) >= 248 &&
-            Camera.pixelGetBlue(pixel) >= 248) {
-          blobX += x;
-          blobY += y;
-          blobCounter++;
-        }
-      }
-      if (blobCounter > 2) { // significant enough
-        seeFeeder = true;
-        blobX /= blobCounter;
-        blobY /= blobCounter;
-        int dx = (blobX-cameraWidth/2)*10;
-        */
-        if (dx > 0) ledValue[1] = 1;
-        else ledValue[7] = 1;
-        if (oldDx != dx){
-          leftSpeed  =  2*dx;
-          rightSpeed = -2*dx;
-          oldDx = dx;
-        } else {
-          leftSpeed  = maxSpeed/3;
-          rightSpeed = maxSpeed/3;
-        }
-      }
-      //recharging behavior
-      if (battery > oldBattery) {
-        leftSpeed  = 0.0;
-        rightSpeed = 0.0;
-        ledValue[8] = 1; // turn on the body led
-      }
-      oldBattery = battery;
-      if (blink++ >= 20) { // blink the back LEDs
-        ledValue[4] = 1;
-        if (blink == 40) blink = 0;
-      }
+      // int blobX=0,blobY=0,blobCounter=0;
+      // // looking for an alight feeder
+      // for(int x=0; x<cameraWidth; x++) for(int y=cameraWidth/3; y<2*cameraWidth/3; y++) {
+      //   int pixel = image[y * cameraWidth + x];
+      //   if (Camera.pixelGetGreen(pixel) >= 248 &&
+      //       Camera.pixelGetBlue(pixel) >= 248) {
+      //     blobX += x;
+      //     blobY += y;
+      //     blobCounter++;
+      //   }
+      // }
+      // if (blobCounter > 2) { // significant enough
+      //   seeFeeder = true;
+      //   blobX /= blobCounter;
+      //   blobY /= blobCounter;
+      //   int dx = (blobX-cameraWidth/2)*10;
+        
+      //   if (dx > 0) ledValue[1] = 1;
+      //   else ledValue[7] = 1;
+      //   if (oldDx != dx){
+      //     leftSpeed  =  2*dx;
+      //     rightSpeed = -2*dx;
+      //     oldDx = dx;
+      //   } else {
+      //     leftSpeed  = maxSpeed/3;
+      //     rightSpeed = maxSpeed/3;
+      //   }
+      // }
+      // //recharging behavior
+      // if (battery > oldBattery) {
+      //   leftSpeed  = 0.0;
+      //   rightSpeed = 0.0;
+      //   ledValue[8] = 1; // turn on the body led
+      // }
+      // oldBattery = battery;
+      // if (blink++ >= 20) { // blink the back LEDs
+      //   ledValue[4] = 1;
+      //   if (blink == 40) blink = 0;
+      // }
 
       //set actuators
-      for(int i=0; i<10; i++) {
-        leds[i].set(ledValue[i]);
-      }
+      // for(int i=0; i<10; i++) {
+      //   leds[i].set(ledValue[i]);
+      // }
       leftMotor.setVelocity(0.00628 * leftSpeed);
       rightMotor.setVelocity(0.00628 * rightSpeed);
     }
@@ -164,5 +168,6 @@ public class Rat0 extends Robot {
   public static void main(String[] args) {
     Rat0 rat0 = new Rat0();
     rat0.run();
+
   }
 }
