@@ -26,6 +26,7 @@ public class Rat0 extends Robot {
 
   protected final int timeStep = 32;
   protected final double maxSpeed = 300;
+  protected final double superSpeed = 1000; //ADDED
   protected final double[] collisionAvoidanceWeights = {0.06,0.03,0.015,0.0,0.0,-0.015,-0.03,-0.06};
   protected final double[] slowMotionWeights = {0.0125,0.00625,0.0,0.0,0.0,0.0,0.00625,0.0125};
 

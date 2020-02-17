@@ -1,1406 +1,198 @@
-
-1[01-00](3)
-hexmaz[1]=10
-hexmaz[1]=WEST EAST
-1[02-00](3)
-hexmaz[2]=10
-hexmaz[2]=WEST EAST
-1[03-00](3)
-hexmaz[3]=8
-hexmaz[3]=WEST
-1[04-00](3)
-hexmaz[4]=10
-hexmaz[4]=WEST EAST
-1[05-00](3)
-hexmaz[5]=10
-hexmaz[5]=WEST EAST
-1[06-00](3)
-hexmaz[6]=10
-hexmaz[6]=WEST EAST
-1[07-00](3)
-hexmaz[7]=8
-hexmaz[7]=WEST
-1[08-00](3)
-hexmaz[8]=10
-hexmaz[8]=WEST EAST
-1[09-00](3)
-hexmaz[9]=10
-hexmaz[9]=WEST EAST
-1[10-00](3)
-hexmaz[10]=8
-hexmaz[10]=WEST
-1[11-00](3)
-hexmaz[11]=10
-hexmaz[11]=WEST EAST
-1[12-00](3)
-hexmaz[12]=10
-hexmaz[12]=WEST EAST
-1[13-00](3)
-hexmaz[13]=8
-hexmaz[13]=WEST
-1[14-00](3)
-hexmaz[14]=10
-hexmaz[14]=WEST EAST1[00-01](3)
-hexmaz[16]=12
-hexmaz[16]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[01-01](4)
-hexmaz[17]=10
-hexmaz[17]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[02-01](4)
-hexmaz[18]=8
-hexmaz[18]= WEST
-ori= 0
-x1x[03-01](4)
-hexmaz[19]=2
-hexmaz[19]= EAST
-ori= 0
-x1x[04-01](4)
-hexmaz[20]=10
-hexmaz[20]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-01](4)
-hexmaz[21]=10
-hexmaz[21]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-01](4)
-hexmaz[22]=10
-hexmaz[22]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-01](4)
-hexmaz[23]=0
-hexmaz[23]=x1x[08-01](4)
-hexmaz[24]=10
-hexmaz[24]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[09-01](4)
-hexmaz[25]=10
-hexmaz[25]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[10-01](4)
-hexmaz[26]=2
-hexmaz[26]= EAST
-ori= 0
-x1x[11-01](4)
-hexmaz[27]=10
-hexmaz[27]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-01](4)
-hexmaz[28]=9
-hexmaz[28]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[13-01](4)
-hexmaz[29]=6
-hexmaz[29]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[14-01](4)
-hexmaz[30]=8
-hexmaz[30]= WEST
-ori= 0
-
-1[15-01](3)
-hexmaz[31]=1
- NORTH
-1[00-02](3)
-hexmaz[32]=4
-hexmaz[32]= SOUTH
-ori= 0
-x1x[01-02](4)
-hexmaz[33]=9
-hexmaz[33]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-02](4)
-hexmaz[34]=5
-hexmaz[34]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-02](4)
-hexmaz[35]=12
-hexmaz[35]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[04-02](4)
-hexmaz[36]=10
-hexmaz[36]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-02](4)
-hexmaz[37]=10
-hexmaz[37]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-02](4)
-hexmaz[38]=10
-hexmaz[38]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-02](4)
-hexmaz[39]=2
-hexmaz[39]= EAST
-ori= 0
-x1x[08-02](4)
-hexmaz[40]=8
-hexmaz[40]= WEST
-ori= 0
-x1x[09-02](4)
-hexmaz[41]=10
-hexmaz[41]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[10-02](4)
-hexmaz[42]=10
-hexmaz[42]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[11-02](4)
-hexmaz[43]=10
-hexmaz[43]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-02](4)
-hexmaz[44]=0
-hexmaz[44]=x1x[13-02](4)
-hexmaz[45]=11
-hexmaz[45]= WEST
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[14-02](4)
-hexmaz[46]=5
-hexmaz[46]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-02](3)
-hexmaz[47]=5
- SOUTH NORTH
-1[00-03](3)
-hexmaz[48]=5
-hexmaz[48]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-03](4)
-hexmaz[49]=5
-hexmaz[49]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-03](4)
-hexmaz[50]=5
-hexmaz[50]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-03](4)
-hexmaz[51]=4
-hexmaz[51]= SOUTH
-ori= 0
-x1x[04-03](4)
-hexmaz[52]=10
-hexmaz[52]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-03](4)
-hexmaz[53]=10
-hexmaz[53]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-03](4)
-hexmaz[54]=10
-hexmaz[54]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-03](4)
-hexmaz[55]=9
-hexmaz[55]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[08-03](4)
-hexmaz[56]=5
-hexmaz[56]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-03](4)
-hexmaz[57]=12
-hexmaz[57]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[10-03](4)
-hexmaz[58]=10
-hexmaz[58]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[11-03](4)
-hexmaz[59]=10
-hexmaz[59]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-03](4)
-hexmaz[60]=3
-hexmaz[60]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[13-03](4)
-hexmaz[61]=12
-hexmaz[61]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[14-03](4)
-hexmaz[62]=3
-hexmaz[62]= EAST
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-03](3)
-hexmaz[63]=5
- SOUTH NORTH
-1[00-04](3)
-hexmaz[64]=5
-hexmaz[64]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-04](4)
-hexmaz[65]=5
-hexmaz[65]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-04](4)
-hexmaz[66]=5
-hexmaz[66]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-04](4)
-hexmaz[67]=6
-hexmaz[67]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[04-04](4)
-hexmaz[68]=10
-hexmaz[68]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-04](4)
-hexmaz[69]=10
-hexmaz[69]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-04](4)
-hexmaz[70]=9
-hexmaz[70]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[07-04](4)
-hexmaz[71]=5
-hexmaz[71]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[08-04](4)
-hexmaz[72]=4
-hexmaz[72]= SOUTH
-ori= 0
-x1x[09-04](4)
-hexmaz[73]=3
-hexmaz[73]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[10-04](4)
-hexmaz[74]=14
-hexmaz[74]= WEST
-ori= 6
- SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[11-04](4)
-hexmaz[75]=8
-hexmaz[75]= WEST
-ori= 0
-x1x[12-04](4)
-hexmaz[76]=10
-hexmaz[76]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[13-04](4)
-hexmaz[77]=2
-hexmaz[77]= EAST
-ori= 0
-x1x[14-04](4)
-hexmaz[78]=11
-hexmaz[78]= WEST
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-04](3)
-hexmaz[79]=7
- SOUTH EAST NORTH
-1[00-05](3)
-hexmaz[80]=5
-hexmaz[80]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-05](4)
-hexmaz[81]=5
-hexmaz[81]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-05](4)
-hexmaz[82]=6
-hexmaz[82]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[03-05](4)
-hexmaz[83]=10
-hexmaz[83]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[04-05](4)
-hexmaz[84]=8
-hexmaz[84]= WEST
-ori= 0
-x1x[05-05](4)
-hexmaz[85]=10
-hexmaz[85]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-05](4)
-hexmaz[86]=2
-hexmaz[86]= EAST
-ori= 0
-x1x[07-05](4)
-hexmaz[87]=2
-hexmaz[87]= EAST
-ori= 0
-x1x[08-05](4)
-hexmaz[88]=3
-hexmaz[88]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-05](4)
-hexmaz[89]=14
-hexmaz[89]= WEST
-ori= 6
- SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[10-05](4)
-hexmaz[90]=9
-hexmaz[90]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[11-05](4)
-hexmaz[91]=6
-hexmaz[91]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[12-05](4)
-hexmaz[92]=10
-hexmaz[92]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[13-05](4)
-hexmaz[93]=10
-hexmaz[93]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[14-05](4)
-hexmaz[94]=10
-hexmaz[94]= WEST
-ori= 2
- EAST
-ori= 0
-
-1[15-05](3)
-hexmaz[95]=9
- WEST NORTH
-1[00-06](3)
-hexmaz[96]=5
-hexmaz[96]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-06](4)
-hexmaz[97]=6
-hexmaz[97]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[02-06](4)
-hexmaz[98]=10
-hexmaz[98]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[03-06](4)
-hexmaz[99]=8
-hexmaz[99]= WEST
-ori= 0
-x1x[04-06](4)
-hexmaz[100]=2
-hexmaz[100]= EAST
-ori= 0
-x1x[05-06](4)
-hexmaz[101]=10
-hexmaz[101]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-06](4)
-hexmaz[102]=8
-hexmaz[102]= WEST
-ori= 0
-x1x[07-06](4)
-hexmaz[103]=10
-hexmaz[103]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[08-06](4)
-hexmaz[104]=11
-hexmaz[104]= WEST
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-06](4)
-hexmaz[105]=12
-hexmaz[105]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[10-06](4)
-hexmaz[106]=1
-hexmaz[106]= NORTH
-
-ori= 0
-x1x[11-06](4)
-hexmaz[107]=12
-hexmaz[107]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[12-06](4)
-hexmaz[108]=8
-hexmaz[108]= WEST
-ori= 0
-x1x[13-06](4)
-hexmaz[109]=8
-hexmaz[109]= WEST
-ori= 0
-x1x[14-06](4)
-hexmaz[110]=9
-hexmaz[110]= WEST
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-06](3)
-hexmaz[111]=5
- SOUTH NORTH
-1[00-07](3)
-hexmaz[112]=4
-hexmaz[112]= SOUTH
-ori= 0
-x1x[01-07](4)
-hexmaz[113]=10
-hexmaz[113]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[02-07](4)
-hexmaz[114]=9
-hexmaz[114]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-07](4)
-hexmaz[115]=6
-hexmaz[115]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[04-07](4)
-hexmaz[116]=10
-hexmaz[116]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-07](4)
-hexmaz[117]=9
-hexmaz[117]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[06-07](4)
-hexmaz[118]=5
-hexmaz[118]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[07-07](4)
-hexmaz[119]=12
-hexmaz[119]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[08-07](4)
-hexmaz[120]=9
-hexmaz[120]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-07](4)
-hexmaz[121]=5
-hexmaz[121]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[10-07](4)
-hexmaz[122]=5
-hexmaz[122]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[11-07](4)
-hexmaz[123]=5
-hexmaz[123]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[12-07](4)
-hexmaz[124]=5
-hexmaz[124]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[13-07](4)
-hexmaz[125]=5
-hexmaz[125]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[14-07](4)
-hexmaz[126]=5
-hexmaz[126]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-07](3)
-hexmaz[127]=5
- SOUTH NORTH
-1[00-08](3)
-hexmaz[128]=5
-hexmaz[128]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-08](4)
-hexmaz[129]=13
-hexmaz[129]= WEST
-ori= 5
- SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-08](4)
-hexmaz[130]=4
-hexmaz[130]= SOUTH
-ori= 0
-x1x[03-08](4)
-hexmaz[131]=8
-hexmaz[131]= WEST
-ori= 0
-x1x[04-08](4)
-hexmaz[132]=9
-hexmaz[132]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[05-08](4)
-hexmaz[133]=5
-hexmaz[133]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[06-08](4)
-hexmaz[134]=5
-hexmaz[134]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[07-08](4)
-hexmaz[135]=6
-hexmaz[135]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[08-08](4)
-hexmaz[136]=2
-hexmaz[136]= EAST
-ori= 0
-x1x[09-08](4)
-hexmaz[137]=3
-hexmaz[137]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[10-08](4)
-hexmaz[138]=4
-hexmaz[138]= SOUTH
-ori= 0
-x1x[11-08](4)
-hexmaz[139]=0
-hexmaz[139]=x1x[12-08](4)
-hexmaz[140]=2
-hexmaz[140]= EAST
-ori= 0
-x1x[13-08](4)
-hexmaz[141]=3
-hexmaz[141]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[14-08](4)
-hexmaz[142]=5
-hexmaz[142]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-08](3)
-hexmaz[143]=5
- SOUTH NORTH
-1[00-09](3)
-hexmaz[144]=5
-hexmaz[144]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-09](4)
-hexmaz[145]=5
-hexmaz[145]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-09](4)
-hexmaz[146]=5
-hexmaz[146]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-09](4)
-hexmaz[147]=5
-hexmaz[147]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[04-09](4)
-hexmaz[148]=5
-hexmaz[148]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[05-09](4)
-hexmaz[149]=5
-hexmaz[149]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[06-09](4)
-hexmaz[150]=6
-hexmaz[150]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[07-09](4)
-hexmaz[151]=10
-hexmaz[151]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[08-09](4)
-hexmaz[152]=9
-hexmaz[152]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-09](4)
-hexmaz[153]=14
-hexmaz[153]= WEST
-ori= 6
- SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[10-09](4)
-hexmaz[154]=1
-hexmaz[154]= NORTH
-
-ori= 0
-x1x[11-09](4)
-hexmaz[155]=6
-hexmaz[155]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[12-09](4)
-hexmaz[156]=10
-hexmaz[156]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[13-09](4)
-hexmaz[157]=10
-hexmaz[157]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[14-09](4)
-hexmaz[158]=3
-hexmaz[158]= EAST
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-09](3)
-hexmaz[159]=5
- SOUTH NORTH
-1[00-10](3)
-hexmaz[160]=5
-hexmaz[160]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-10](4)
-hexmaz[161]=5
-hexmaz[161]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-10](4)
-hexmaz[162]=4
-hexmaz[162]= SOUTH
-ori= 0
-x1x[03-10](4)
-hexmaz[163]=2
-hexmaz[163]= EAST
-ori= 0
-x1x[04-10](4)
-hexmaz[164]=2
-hexmaz[164]= EAST
-ori= 0
-x1x[05-10](4)
-hexmaz[165]=2
-hexmaz[165]= EAST
-ori= 0
-x1x[06-10](4)
-hexmaz[166]=8
-hexmaz[166]= WEST
-ori= 0
-x1x[07-10](4)
-hexmaz[167]=8
-hexmaz[167]= WEST
-ori= 0
-x1x[08-10](4)
-hexmaz[168]=1
-hexmaz[168]= NORTH
-
-ori= 0
-x1x[09-10](4)
-hexmaz[169]=15
-hexmaz[169]= WEST
-ori= 7
- SOUTH
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[10-10](4)
-hexmaz[170]=6
-hexmaz[170]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[11-10](4)
-hexmaz[171]=10
-hexmaz[171]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-10](4)
-hexmaz[172]=9
-hexmaz[172]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[13-10](4)
-hexmaz[173]=14
-hexmaz[173]= WEST
-ori= 6
- SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[14-10](4)
-hexmaz[174]=10
-hexmaz[174]= WEST
-ori= 2
- EAST
-ori= 0
-
-1[15-10](3)
-hexmaz[175]=1
- NORTH
-1[00-11](3)
-hexmaz[176]=4
-hexmaz[176]= SOUTH
-ori= 0
-x1x[01-11](4)
-hexmaz[177]=1
-hexmaz[177]= NORTH
-
-ori= 0
-x1x[02-11](4)
-hexmaz[178]=5
-hexmaz[178]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-11](4)
-hexmaz[179]=12
-hexmaz[179]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[04-11](4)
-hexmaz[180]=10
-hexmaz[180]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-11](4)
-hexmaz[181]=10
-hexmaz[181]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-11](4)
-hexmaz[182]=3
-hexmaz[182]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[07-11](4)
-hexmaz[183]=5
-hexmaz[183]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[08-11](4)
-hexmaz[184]=4
-hexmaz[184]= SOUTH
-ori= 0
-x1x[09-11](4)
-hexmaz[185]=9
-hexmaz[185]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[10-11](4)
-hexmaz[186]=14
-hexmaz[186]= WEST
-ori= 6
- SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[11-11](4)
-hexmaz[187]=10
-hexmaz[187]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-11](4)
-hexmaz[188]=2
-hexmaz[188]= EAST
-ori= 0
-x1x[13-11](4)
-hexmaz[189]=8
-hexmaz[189]= WEST
-ori= 0
-x1x[14-11](4)
-hexmaz[190]=9
-hexmaz[190]= WEST
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-11](3)
-hexmaz[191]=5
- SOUTH NORTH
-1[00-12](3)
-hexmaz[192]=5
-hexmaz[192]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-12](4)
-hexmaz[193]=5
-hexmaz[193]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-12](4)
-hexmaz[194]=5
-hexmaz[194]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-12](4)
-hexmaz[195]=4
-hexmaz[195]= SOUTH
-ori= 0
-x1x[04-12](4)
-hexmaz[196]=10
-hexmaz[196]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-12](4)
-hexmaz[197]=10
-hexmaz[197]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-12](4)
-hexmaz[198]=10
-hexmaz[198]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-12](4)
-hexmaz[199]=3
-hexmaz[199]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[08-12](4)
-hexmaz[200]=7
-hexmaz[200]= SOUTH
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[09-12](4)
-hexmaz[201]=6
-hexmaz[201]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[10-12](4)
-hexmaz[202]=10
-hexmaz[202]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[11-12](4)
-hexmaz[203]=10
-hexmaz[203]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-12](4)
-hexmaz[204]=9
-hexmaz[204]= WEST
-ori= 1
- NORTH
-
-ori= 0
-x1x[13-12](4)
-hexmaz[205]=7
-hexmaz[205]= SOUTH
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[14-12](4)
-hexmaz[206]=5
-hexmaz[206]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-12](3)
-hexmaz[207]=5
- SOUTH NORTH
-1[00-13](3)
-hexmaz[208]=7
-hexmaz[208]= SOUTH
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[01-13](4)
-hexmaz[209]=5
-hexmaz[209]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-13](4)
-hexmaz[210]=5
-hexmaz[210]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-x1x[03-13](4)
-hexmaz[211]=6
-hexmaz[211]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[04-13](4)
-hexmaz[212]=10
-hexmaz[212]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-13](4)
-hexmaz[213]=10
-hexmaz[213]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[06-13](4)
-hexmaz[214]=10
-hexmaz[214]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-13](4)
-hexmaz[215]=8
-hexmaz[215]= WEST
-ori= 0
-x1x[08-13](4)
-hexmaz[216]=8
-hexmaz[216]= WEST
-ori= 0
-x1x[09-13](4)
-hexmaz[217]=10
-hexmaz[217]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[10-13](4)
-hexmaz[218]=10
-hexmaz[218]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[11-13](4)
-hexmaz[219]=10
-hexmaz[219]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-13](4)
-hexmaz[220]=0
-hexmaz[220]=x1x[13-13](4)
-hexmaz[221]=11
-hexmaz[221]= WEST
-ori= 3
- EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[14-13](4)
-hexmaz[222]=5
-hexmaz[222]= SOUTH
-ori= 1
- NORTH
-
-ori= 0
-
-1[15-13](3)
-hexmaz[223]=5
- SOUTH NORTH
-1[00-14](3)
-hexmaz[224]=12
-hexmaz[224]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[01-14](4)
-hexmaz[225]=3
-hexmaz[225]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[02-14](4)
-hexmaz[226]=6
-hexmaz[226]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[03-14](4)
-hexmaz[227]=10
-hexmaz[227]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[04-14](4)
-hexmaz[228]=10
-hexmaz[228]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[05-14](4)
-hexmaz[229]=8
-hexmaz[229]= WEST
-ori= 0
-x1x[06-14](4)
-hexmaz[230]=10
-hexmaz[230]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[07-14](4)
-hexmaz[231]=3
-hexmaz[231]= EAST
-ori= 1
- NORTH
-
-ori= 0
-x1x[08-14](4)
-hexmaz[232]=6
-hexmaz[232]= SOUTH
-ori= 2
- EAST
-ori= 0
-x1x[09-14](4)
-hexmaz[233]=10
-hexmaz[233]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[10-14](4)
-hexmaz[234]=10
-hexmaz[234]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[11-14](4)
-hexmaz[235]=10
-hexmaz[235]= WEST
-ori= 2
- EAST
-ori= 0
-x1x[12-14](4)
-hexmaz[236]=1
-hexmaz[236]= NORTH
-
-ori= 0
-x1x[13-14](4)
-hexmaz[237]=12
-hexmaz[237]= WEST
-ori= 4
- SOUTH
-ori= 0
-x1x[14-14](4)
-hexmaz[238]=2
-hexmaz[238]= EAST
-ori= 0
-
-1[15-14](3)
-hexmaz[239]=1
- NORTH
-
-11[01-15](3)
-hexmaz[241]=10
-hexmaz[241]=WEST EAST
-11[02-15](3)
-hexmaz[242]=10
-hexmaz[242]=WEST EAST
-11[03-15](3)
-hexmaz[243]=10
-hexmaz[243]=WEST EAST
-11[04-15](3)
-hexmaz[244]=10
-hexmaz[244]=WEST EAST
-11[05-15](3)
-hexmaz[245]=2
- EAST
-11[06-15](3)
-hexmaz[246]=10
-hexmaz[246]=WEST EAST
-11[07-15](3)
-hexmaz[247]=10
-hexmaz[247]=WEST EAST
-11[08-15](3)
-hexmaz[248]=10
-hexmaz[248]=WEST EAST
-11[09-15](3)
-hexmaz[249]=10
-hexmaz[249]=WEST EAST
-11[10-15](3)
-hexmaz[250]=10
-hexmaz[250]=WEST EAST
-11[11-15](3)
-hexmaz[251]=10
-hexmaz[251]=WEST EAST
-11[12-15](3)
-hexmaz[252]=2
- EAST
-11[13-15](3)
-hexmaz[253]=2
- EAST
-11[14-15](3)
-hexmaz[254]=10
-hexmaz[254]=WEST EAST
+East:017 = 1
+East:018 = 0
+East:019 = 0
+East:020 = 1
+East:021 = 0
+East:022 = 0
+East:023 = 0
+East:024 = 0
+East:025 = 0
+East:026 = 0
+East:027 = 0
+East:028 = 0
+East:029 = 0
+East:030 = 0
+East:033 = 0
+East:034 = 0
+East:035 = 1
+East:036 = 0
+East:037 = 0
+East:038 = 0
+East:039 = 0
+East:040 = 0
+East:041 = 0
+East:042 = 0
+East:043 = 0
+East:044 = 0
+East:045 = 0
+East:046 = 0
+East:049 = 0
+East:050 = 1
+East:051 = 0
+East:052 = 0
+East:053 = 0
+East:054 = 0
+East:055 = 0
+East:056 = 0
+East:057 = 0
+East:058 = 0
+East:059 = 0
+East:060 = 0
+East:061 = 0
+East:062 = 0
+East:065 = 0
+East:066 = 0
+East:067 = 1
+East:068 = 0
+East:069 = 0
+East:070 = 0
+East:071 = 0
+East:072 = 0
+East:073 = 0
+East:074 = 0
+East:075 = 0
+East:076 = 0
+East:077 = 0
+East:078 = 0
+East:081 = 1
+East:082 = 1
+East:083 = 0
+East:084 = 0
+East:085 = 0
+East:086 = 0
+East:087 = 0
+East:088 = 0
+East:089 = 0
+East:090 = 0
+East:091 = 0
+East:092 = 0
+East:093 = 0
+East:094 = 0
+East:097 = 0
+East:098 = 0
+East:099 = 0
+East:100 = 0
+East:101 = 0
+East:102 = 0
+East:103 = 0
+East:104 = 0
+East:105 = 0
+East:106 = 0
+East:107 = 0
+East:108 = 0
+East:109 = 0
+East:110 = 0
+East:113 = 0
+East:114 = 0
+East:115 = 0
+East:116 = 0
+East:117 = 0
+East:118 = 0
+East:119 = 0
+East:120 = 0
+East:121 = 0
+East:122 = 0
+East:123 = 0
+East:124 = 0
+East:125 = 0
+East:126 = 0
+East:129 = 0
+East:130 = 0
+East:131 = 0
+East:132 = 0
+East:133 = 0
+East:134 = 0
+East:135 = 0
+East:136 = 0
+East:137 = 0
+East:138 = 0
+East:139 = 0
+East:140 = 0
+East:141 = 0
+East:142 = 0
+East:145 = 1
+East:146 = 1
+East:147 = 1
+East:148 = 1
+East:149 = 0
+East:150 = 0
+East:151 = 0
+East:152 = 0
+East:153 = 0
+East:154 = 0
+East:155 = 0
+East:156 = 0
+East:157 = 0
+East:158 = 0
+East:161 = 0
+East:162 = 0
+East:163 = 0
+East:164 = 0
+East:165 = 0
+East:166 = 0
+East:167 = 0
+East:168 = 0
+East:169 = 0
+East:170 = 0
+East:171 = 0
+East:172 = 0
+East:173 = 0
+East:174 = 0
+East:177 = 0
+East:178 = 0
+East:179 = 0
+East:180 = 0
+East:181 = 0
+East:182 = 0
+East:183 = 0
+East:184 = 0
+East:185 = 0
+East:186 = 0
+East:187 = 0
+East:188 = 0
+East:189 = 0
+East:190 = 0
+East:193 = 0
+East:194 = 0
+East:195 = 0
+East:196 = 0
+East:197 = 0
+East:198 = 0
+East:199 = 0
+East:200 = 0
+East:201 = 0
+East:202 = 0
+East:203 = 0
+East:204 = 0
+East:205 = 0
+East:206 = 0
+East:209 = 0
+East:210 = 0
+East:211 = 0
+East:212 = 0
+East:213 = 0
+East:214 = 0
+East:215 = 0
+East:216 = 0
+East:217 = 0
+East:218 = 0
+East:219 = 0
+East:220 = 0
+East:221 = 0
+East:222 = 0
+East:225 = 0
+East:226 = 0
+East:227 = 0
+East:228 = 0
+East:229 = 0
+East:230 = 0
+East:231 = 0
+East:232 = 0
+East:233 = 0
+East:234 = 0
+East:235 = 0
+East:236 = 0
+East:237 = 0
+East:238 = 0
+ 
+Maze Generation Complete

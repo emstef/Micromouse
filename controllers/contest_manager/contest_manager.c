@@ -76,6 +76,8 @@ while (!generate_random_maze(maze)) {
 //*/
 
 genetate_saved_maze(maze);
+
+// print_maze(maze);
  
 #ifdef DEBUG
   // display the maze into the debug display
