@@ -347,22 +347,22 @@ void genetate_saved_maze(Maze *maze){
 
 
   int hexmaz[] ={
-   0x0E, 0x0A, 0x0A, 0x0A, 0x09, 0x0C, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x09,
-   0x0C, 0x0A, 0x09, 0x0C, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x06, 0x08, 0x01, 0x06, 0x09, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x0C, 0x01, 0x07, 0x0C, 0x01, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x05, 0x05, 0x0C, 0x03, 0x05, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x04, 0x03, 0x06, 0x09, 0x05, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x05, 0x0C, 0x09, 0x05, 0x05, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x05, 0x05, 0x05, 0x04, 0x01, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x05, 0x05, 0x05, 0x04, 0x01, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x06, 0x03, 0x06, 0x02, 0x03, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x0C, 0x08, 0x08, 0x08, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
-   0x06, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03,
+    0x0E, 0x08, 0x0A, 0x08, 0x08, 0x0A, 0x08, 0x0A, 0x0A, 0x08, 0x0A, 0x08, 0x08, 0x08, 0x08, 0x09,
+    0x0C, 0x02, 0x08, 0x01, 0x06, 0x0A, 0x02, 0x0A, 0x09, 0x06, 0x09, 0x05, 0x05, 0x05, 0x05, 0x05,
+    0x06, 0x09, 0x07, 0x04, 0x09, 0x0D, 0x0C, 0x09, 0x06, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01,
+    0x0E, 0x02, 0x0A, 0x03, 0x07, 0x04, 0x03, 0x06, 0x09, 0x07, 0x05, 0x07, 0x05, 0x07, 0x07, 0x05,
+    0x0C, 0x0A, 0x0A, 0x0A, 0x0A, 0x01, 0x0E, 0x09, 0x06, 0x09, 0x04, 0x0A, 0x00, 0x0A, 0x09, 0x05,
+    0x06, 0x0A, 0x0A, 0x0A, 0x09, 0x05, 0x0C, 0x02, 0x08, 0x03, 0x06, 0x09, 0x06, 0x08, 0x03, 0x05,
+    0x0D, 0x0E, 0x08, 0x08, 0x01, 0x07, 0x06, 0x08, 0x03, 0x0C, 0x08, 0x02, 0x0A, 0x03, 0x0D, 0x05,
+    0x06, 0x08, 0x03, 0x05, 0x07, 0x0E, 0x09, 0x04, 0x09, 0x05, 0x06, 0x0A, 0x09, 0x0C, 0x01, 0x05,
+    0x0E, 0x01, 0x0C, 0x02, 0x08, 0x0A, 0x01, 0x06, 0x03, 0x06, 0x08, 0x09, 0x05, 0x07, 0x04, 0x01,
+    0x0C, 0x01, 0x06, 0x08, 0x02, 0x08, 0x02, 0x0B, 0x0E, 0x09, 0x07, 0x06, 0x03, 0x0C, 0x03, 0x05,
+    0x05, 0x05, 0x0C, 0x02, 0x0A, 0x02, 0x0B, 0x0E, 0x08, 0x02, 0x08, 0x08, 0x08, 0x03, 0x0D, 0x05,
+    0x04, 0x01, 0x06, 0x09, 0x0D, 0x0C, 0x0B, 0x0D, 0x06, 0x0A, 0x01, 0x05, 0x04, 0x0B, 0x05, 0x05,
+    0x05, 0x05, 0x0C, 0x00, 0x00, 0x00, 0x0A, 0x00, 0x0A, 0x09, 0x06, 0x02, 0x00, 0x0B, 0x04, 0x01,
+    0x06, 0x00, 0x01, 0x07, 0x07, 0x07, 0x0D, 0x07, 0x0C, 0x00, 0x0B, 0x0C, 0x03, 0x0E, 0x03, 0x05,
+    0x0D, 0x07, 0x07, 0x0C, 0x0A, 0x09, 0x05, 0x0C, 0x03, 0x07, 0x0C, 0x00, 0x0A, 0x08, 0x08, 0x01,
+    0x06, 0x0A, 0x0A, 0x03, 0x0E, 0x02, 0x02, 0x02, 0x0A, 0x0A, 0x03, 0x06, 0x0B, 0x07, 0x07, 0x07,
   };
 
 
@@ -390,9 +390,9 @@ void genetate_saved_maze(Maze *maze){
 
   for(j=0; j<w; j++){ //Left POV
     for(i=0; i<h; i++){ //Right POC
-      
+
       //  remove walls then add if value dictates
-      
+
       curr = i+h*j;
 
       //Sides
@@ -400,14 +400,14 @@ void genetate_saved_maze(Maze *maze){
       if(i==0 && (j!=0 && j!=w-1)){ //Side: [0,x]
         // fprintf(file, "1[%.2d-%.2d](%d)\n", maze->cells[curr]->pos_x, maze->cells[curr]->pos_y, maze->cells[curr]->link_number);
         // fprintf(file, "hexmaz[%d]=%d\n", curr, hexmaz[curr]);
-        maze->cells[curr]->links[0]->wall=0;   //North 
+        maze->cells[curr]->links[0]->wall=0;   //North
         maze->cells[curr]->links[1]->wall=0;  //West
         maze->cells[curr]->links[2]->wall=0; //East
 
         // fprintf(file, "hexmaz[%d]=", curr);
 
         ori = hexmaz[curr];
-        
+
         if( ori - west >= 0 ){
           ori-=west;
           // fprintf(file, " %s", "WEST");
@@ -418,7 +418,7 @@ void genetate_saved_maze(Maze *maze){
           ori-=south;
           // fprintf(file, " %s", "SOUTH");
           // fprintf(file, "\nori= %d\n", ori);
-        
+
         }
         if( ori - east >= 0 ){
           ori-=east;
@@ -426,7 +426,7 @@ void genetate_saved_maze(Maze *maze){
           // fprintf(file, "\nori= %d\n", ori);
           maze->cells[curr]->links[2]->wall=1; //East
 
-        
+
         }
         if( ori - north >= 0 ){
           ori-=north;
@@ -442,7 +442,7 @@ void genetate_saved_maze(Maze *maze){
       if(i==h-1 && (j!=0 && j!=w-1)){ //Side: [15,x]
         // fprintf(file, "\n1[%.2d-%.2d](%d)\n", maze->cells[curr]->pos_x, maze->cells[curr]->pos_y, maze->cells[curr]->link_number);
         // fprintf(file, "hexmaz[%d]=%d\n", curr, hexmaz[curr]);
-        maze->cells[curr]->links[0]->wall=0;   //South 
+        maze->cells[curr]->links[0]->wall=0;   //South
         maze->cells[curr]->links[1]->wall=0;  //West
         maze->cells[curr]->links[2]->wall=0; //East
 
@@ -455,12 +455,12 @@ void genetate_saved_maze(Maze *maze){
         if( ori - south >= 0 ){
           ori-=south;
           // fprintf(file, " %s", "SOUTH");
-          maze->cells[curr]->links[0]->wall=1;   //South 
+          maze->cells[curr]->links[0]->wall=1;   //South
         }
         if( ori - east >= 0 ){
           ori-=east;
           // fprintf(file, " %s", "EAST");
-          maze->cells[curr]->links[2]->wall=1; //East   
+          maze->cells[curr]->links[2]->wall=1; //East
         }
         if( ori - north >= 0 ){
           ori-=north;
@@ -474,7 +474,7 @@ void genetate_saved_maze(Maze *maze){
       if(j==0 && (i!=0 && i!=h-1)){ //Side: [x,0]
         // fprintf(file, "\n1[%.2d-%.2d](%d)\n", maze->cells[curr]->pos_x, maze->cells[curr]->pos_y, maze->cells[curr]->link_number);
         // fprintf(file, "hexmaz[%d]=%d\n", curr, hexmaz[curr]);
-        maze->cells[curr]->links[0]->wall=0;   //South 
+        maze->cells[curr]->links[0]->wall=0;   //South
         maze->cells[curr]->links[1]->wall=0;  //North
         maze->cells[curr]->links[2]->wall=0; //East
 
@@ -491,7 +491,7 @@ void genetate_saved_maze(Maze *maze){
         if( ori - east >= 0 ){
           ori-=east;
           // fprintf(file, " %s", "EAST");
-          maze->cells[curr]->links[2]->wall=1; //East 
+          maze->cells[curr]->links[2]->wall=1; //East
         }
         if( ori - north >= 0 ){
           ori-=north;
@@ -506,7 +506,7 @@ void genetate_saved_maze(Maze *maze){
       if(j==w-1 && (i!=0 && i!=h-1)){ //Side: [x,15]
         // fprintf(file, "\n11[%.2d-%.2d](%d)\n", maze->cells[curr]->pos_x, maze->cells[curr]->pos_y, maze->cells[curr]->link_number);
         // fprintf(file, "hexmaz[%d]=%d\n", curr, hexmaz[curr]);
-        maze->cells[curr]->links[0]->wall=0;   //South 
+        maze->cells[curr]->links[0]->wall=0;   //South
         maze->cells[curr]->links[1]->wall=0;  //North
         maze->cells[curr]->links[2]->wall=0; //West
 
@@ -524,7 +524,7 @@ void genetate_saved_maze(Maze *maze){
         if( ori - east >= 0 ){
           ori-=east;
           // fprintf(file, " %s", "EAST");
-           //East 
+           //East
         }
         if( ori - north >= 0 ){
           ori-=north;
@@ -534,7 +534,7 @@ void genetate_saved_maze(Maze *maze){
         if( ori != 0 ){
           // fprintf(file, " \nError: cell calue\n");
         }
-        // fprintf(file, "\n4.i=%d, j=%d", i, j);        
+        // fprintf(file, "\n4.i=%d, j=%d", i, j);
       }
 
       // Intermediary
@@ -542,7 +542,7 @@ void genetate_saved_maze(Maze *maze){
       if(i!=0 && j!=0 && i!=w-1 && j!=h-1){
         // fprintf(file, "x1x[%.2d-%.2d](%d)\n", maze->cells[curr]->pos_x, maze->cells[curr]->pos_y, maze->cells[curr]->link_number);
         // fprintf(file, "hexmaz[%d]=%d\n", curr, hexmaz[curr]);
-        // maze->cells[curr]->links[0]->wall=0;    //South 
+        // maze->cells[curr]->links[0]->wall=0;    //South
         // maze->cells[curr]->links[1]->wall=1;   //North
         // maze->cells[curr]->links[2]->wall=0;  //East
         // maze->cells[curr]->links[3]->wall=0; //West
@@ -551,7 +551,7 @@ void genetate_saved_maze(Maze *maze){
         // fprintf(file, "hexmaz[%d]=", curr);
 
         ori = hexmaz[curr];
-        
+
         if( ori - west >= 0 ){
           ori-=west;
           // fprintf(file, " %s", "WEST");
@@ -565,14 +565,14 @@ void genetate_saved_maze(Maze *maze){
           // fprintf(file, "\nori= %d\n", ori);
           maze->cells[curr]->links[0]->wall=1;
         }else
-          maze->cells[curr]->links[0]->wall=0;    //South 
+          maze->cells[curr]->links[0]->wall=0;    //South
         if( ori - east >= 0 ){
           ori-=east;
           // fprintf(file, " %s", "EAST");
           // fprintf(file, "\nori= %d\n", ori);
-          maze->cells[curr]->links[3]->wall=1; //East   
-          fprintf(file, "East:%.3d = 1\n",curr);     
-        }else{ 
+          maze->cells[curr]->links[3]->wall=1; //East
+          fprintf(file, "East:%.3d = 1\n",curr);
+        }else{
           maze->cells[curr]->links[3]->wall=0;  //East
           fprintf(file, "East:%.3d = 0\n",curr);
         }
@@ -610,7 +610,7 @@ void print_maze(Maze *maze){
   fprintf(file, "print\n");
 
   // for(j=0; j<h*2+1; j++){ //Left POV
-  for(j=h*2; j>=0; j--){ //Left POV  
+  for(j=h*2; j>=0; j--){ //Left POV
     for(i=0; i<w*2+1; i++){ //Right POC
       int curr = (i/2)+h*(j/2);
       if(j%2==0){
@@ -626,7 +626,7 @@ void print_maze(Maze *maze){
           // fprintf(file, "curr==%d\n", curr);
           if(i!=1 && j!=0 && i!=w*2-1 && j!=h*2){
             if(j==h*2-2){
-              fprintf(file, "---");   
+              fprintf(file, "---");
             }else{
               if( maze->cells[curr]->links[0]->wall==1){ //South
                 fprintf(file, "---");
@@ -634,7 +634,7 @@ void print_maze(Maze *maze){
                 // fprintf(file, "%.3d",curr);
                 fprintf(file, "   ");
             }
-          }else 
+          }else
             fprintf(file, "---");
 
         }
@@ -658,7 +658,7 @@ void print_maze(Maze *maze){
 
               // fprintf(file, "%.3d",curr);
             }
-          }else 
+          }else
             fprintf(file, "|");
 
         }else{
@@ -670,14 +670,14 @@ void print_maze(Maze *maze){
       }
     }
     fprintf(file, "\n");
-  }  
+  }
 
 
   // for(i=0; i<dim; i++){
   //   if(i%w == 0){
   //     fprintf(file, "\n");
   //   }
-  //   // 
+  //   //
 
   // }
 
