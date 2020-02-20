@@ -106,11 +106,11 @@ public class Rat0 extends Robot {
     for(int j=0;j<16;j++){
       for(int i=0;i<16;i++){
         maze[i][j][0] = 0; //N
-  	  maze[i][j][1] = 0; //E
-  	  maze[i][j][2] = 0; //S
-  	  maze[i][j][3] = 0; //W
-  	  maze[i][j][4] = -1;
-  	  maze[i][j][4] = -99;
+    	  maze[i][j][1] = 0; //E
+    	  maze[i][j][2] = 0; //S
+    	  maze[i][j][3] = 0; //W
+    	  maze[i][j][4] = -1;
+    	  maze[i][j][4] = -99;
 
         maze[i][15][0] = 1; // j==15 North
         maze[i][0][2] = 1; // j==0 South
@@ -118,20 +118,6 @@ public class Rat0 extends Robot {
         maze[15][j][1] = 1; // i==15 East
       }
     }
-    //puts a third wall in every corner
-    //South-West (micromouse starting position)
-  //  maze[0][0][1] = 1;
-  //  maze[1][0][3] = 1;
-  //  //North-West
-  //  maze[0][14][2] =0;
-  //  maze[0][15][0] = 0;
-  //  //South-East
-  //  maze[15][0][0] = 0;
-  //  maze[15][1][2] = 0;
-  //  //North-East
-  //  maze[14][15][1] = 0;
-  //  maze[15][15][3] = 0;
-
     //-----Flood-----//
     //fills all flood array spaces with -1
     for(int i=0;i<16;i++){
@@ -169,6 +155,9 @@ public class Rat0 extends Robot {
     //North-East
     maze[14][15][1] = 1;
     maze[15][15][3] = 1;
+    maze[15][14][0] = 1;
+    maze[15][15][2] = 1;
+    
 
     //fills the flood array with values using flood fill logic
     int k=0;
@@ -350,17 +339,6 @@ public class Rat0 extends Robot {
     // Enter here exit cleanup code
   }
 
-  // public void compute_odometry( PositionSensor left_position_sensor, PositionSensor right_position_sensor) {
-  //   double l = left_position_sensor.getValue();//wb_position_sensor_get_value(left_position_sensor);
-  //   double r = right_position_sensor.getValue();//wb_position_sensor_get_value(right_position_sensor);
-  //   double dl = l * wheelRadius;         // distance covered by left wheel in meter
-  //   double dr = r * wheelRadius;         // distance covered by right wheel in meter
-  //   double da = (dr - dl) / axleLength;  // delta orientation
-  //   System.out.print("estimated distance covered by left wheel: "+dl+" m.\n");
-  //   System.out.print("estimated distance covered by right wheel: "+dr+" m.\n");
-  //   System.out.print("estimated change of orientation: "+da+" rad.\n");
-  // }
-
   public void print_maze(int[][][] maze){
     /*
                _       _
@@ -404,7 +382,7 @@ public class Rat0 extends Robot {
               break;
             default:
               // if(j<2) break;
-              if(maze[i/2][(j-2)/2+1][2]==1 && j>2){ //South
+              if(maze[i/2][(j-2)/2+1][2]==1){ //South
     					  System.out.print("---");
     					  if(maze[i/2][j/2][2] != maze[i/2][(j-2)/2][0] && j!=0){
     						  System.out.print("ERROR: Neibhour N&S dont match!");
@@ -426,7 +404,7 @@ public class Rat0 extends Robot {
     					  System.out.print(" ");
               break;
             default:
-    				  if(maze[(i-2)/2][j/2][1]==1 && i>2){ //East
+    				  if(maze[(i-2)/2][j/2][1]==1){ //East
     					  System.out.print("|");
     					  // if(maze[(i-2)/2][j/2][1] != maze[i/2][j/2][3] && i!=h*2){
     						//   System.out.print("ERROR: Neibhour E&W dont match!");
@@ -444,7 +422,7 @@ public class Rat0 extends Robot {
   			  if(maze[i/2][j/2][4]>=0){
   				  System.out.printf("%03d",maze[i/2][j/2][4]);
   			  }else{
-  				  System.out.printf("%02d",maze[i/2][j/2][4]);
+  				  System.out.printf("%03d",maze[i/2][j/2][4]);
   			  }
   		  }
   		}
