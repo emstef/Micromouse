@@ -1,19 +1,5 @@
-// Copyright 1996-2020 Cyberbotics Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 import com.cyberbotics.webots.controller.Accelerometer;
-import com.cyberbotics.webots.controller.Camera;
+// import com.cyberbotics.webots.controller.Camera;
 import com.cyberbotics.webots.controller.DistanceSensor;
 import com.cyberbotics.webots.controller.LED;
 import com.cyberbotics.webots.controller.LightSensor;
@@ -43,7 +29,7 @@ public class Rat0 extends Robot {
   protected final double axleLength = 0.052;
 
   protected Accelerometer accelerometer;
-  protected Camera camera;
+  // protected Camera camera;
   protected int cameraWidth, cameraHeight;
   protected Motor leftMotor, rightMotor;
   protected DistanceSensor[] distanceSensors = new DistanceSensor[8];
@@ -51,20 +37,25 @@ public class Rat0 extends Robot {
   protected LED[] leds = new LED[10];
 
   //ADDED
+  //for distance sensor
   protected PositionSensor lps;
   protected PositionSensor rps;
+
   protected double ldis = 0;
   protected double rdis = 0;
   protected double dori = 0;
+  //for turning
+  protected double startori = 0;
+  protected double oldori = 0;
+  //for cell counting
+  protected double[] oldpos = new double[2];
+  protected boolean step = false;
+  protected int counter = 0;
 
   protected int[][][] maze = new int[16][16][6]; //0.N 1.E 2.S 3.W 4.Flood 5.Visited
 
   public Rat0() {
     accelerometer = getAccelerometer("accelerometer");
-    camera = getCamera("camera");
-    camera.enable(8*timeStep);
-    cameraWidth=camera.getWidth();
-    cameraHeight=camera.getHeight();
     leftMotor = getMotor("left wheel motor");
     rightMotor = getMotor("right wheel motor");
     leftMotor.setPosition(Double.POSITIVE_INFINITY);
@@ -77,10 +68,7 @@ public class Rat0 extends Robot {
     for (int i=0;i<8;i++) {
       distanceSensors[i] = getDistanceSensor("ps"+i);
       distanceSensors[i].enable(timeStep);
-      // lightSensors[i] = getLightSensor("ls"+i);
-      // lightSensors[i].enable(timeStep);
     }
-    // batterySensorEnable(timeStep);
 
     //ADDED
     lps = leftMotor.getPositionSensor(); //left_position_sensor
@@ -97,7 +85,6 @@ public class Rat0 extends Robot {
 
     // int[][][] maze = new int[16][16][6]; //0.N 1.E 2.S 3.W 4.Flood 5.Visited
     //-----Initialization-----//
-    // int maze[16][16][5];  //maze[x-axis][y-axis][walls & flood] (0=North, 1=East, 2=South, 3=West, 4=Flood)
     int mx = 0;           //micromouse x-axis value
     int my = 0;           //micromouse y-axis value
 
@@ -110,7 +97,7 @@ public class Rat0 extends Robot {
     	  maze[i][j][2] = 0; //S
     	  maze[i][j][3] = 0; //W
     	  maze[i][j][4] = -1;
-    	  maze[i][j][4] = -99;
+    	  maze[i][j][5] = 0;
 
         maze[i][15][0] = 1; // j==15 North
         maze[i][0][2] = 1; // j==0 South
@@ -157,7 +144,7 @@ public class Rat0 extends Robot {
     maze[15][15][3] = 1;
     maze[15][14][0] = 1;
     maze[15][15][2] = 1;
-    
+
 
     //fills the flood array with values using flood fill logic
     int k=0;
@@ -207,21 +194,20 @@ public class Rat0 extends Robot {
     boolean seeFeeder = false;
     double battery;
     double oldBattery = -1.0;
-    int image[];
+    // int image[];
     double distance[] = new double[8];
     int ledValue[] = new int[10];
     double leftSpeed, rightSpeed;
 
     //ADDED
     int timer = 0;
-    boolean flag1 = false;
-    boolean flag2 = false;
-    boolean flag3 = false;
+    boolean rturn = false;
+    boolean lturn = false;
+    boolean uturn = false;
 
     while (step(timeStep) != -1) {
 
       // read sensor information
-      image = camera.getImage();
       for(int i=0;i<8;i++) distance[i] = distanceSensors[i].getValue();
       // battery = batterySensorGetValue();
       for(int i=0;i<10;i++) ledValue[i] = 0;
@@ -237,7 +223,7 @@ public class Rat0 extends Robot {
       // return either to left or to right when there is an obstacle
       // if (distance[6]+distance[7] > 1800 || distance[0]+distance[1] > 1800) {
 
-      print_maze(maze);
+      // print_maze(maze);
 
       /*
          ___      _                      _
@@ -257,6 +243,35 @@ public class Rat0 extends Robot {
     // System.out.print("estimated distance covered by right wheel: "+rdis+" m.\n");
     // System.out.print("estimated change of orientation: "+dori+" rad.\n");
 
+    //step while turning
+    if(step && (uturn || rturn || lturn)){
+      double rdiff = ldis-oldpos[0];
+      double ldiff = rdis-oldpos[1];
+      // System.out.println("STEP+TURN: left= "+rdiff+" right= "+rdiff);
+      if(rdiff > 0.08 && ldiff > 0.8){
+        counter++;
+      }
+      step = false;
+
+    }
+
+    if(!step && ldis >0 && rdis > 0){
+      // System.out.println("STEP");
+      oldpos[0] = ldis;
+      oldpos[1] = rdis;
+      // System.out.println("oldpos0: "+ldis+" oldpos1: "+rdis);
+      step = true;
+    }
+
+    if(step){
+      if(oldpos[0]+0.1075136 < ldis && oldpos[1]+0.1075136 < rdis){
+        System.out.println("oldpos0: "+oldpos[0]+" oldpos1: "+oldpos[1]);
+        System.out.println("Counter: "+(++counter));
+        step = false;   
+      }
+      // System.out.println("0: "+ldis+" 1: "+rdis);
+    }
+
     /*
       _____
      |_   _|   _ _ __ _ __
@@ -265,56 +280,62 @@ public class Rat0 extends Robot {
        |_| \__,_|_|  |_| |_|
 
     */
-    // if (distance[0]+distance[7] > 900 && (distance[2] >= distance[5] - 100 && distance[2] <= distance[5] + 100) || flag3) {
-    if (distance[0]+distance[7] > 600 && (distance[2] >= 200 && distance[5] >= 200) || flag3) {
-      // System.out.print("U-Turn"+flag3+":"+timer);
-      if (timer++ >= 1) {
-        leftSpeed  = -maxSpeed;
-        rightSpeed = maxSpeed;
-        ledValue[8] = 1;
-        flag3 = true;
-        flag2 = false;
-        flag1 = false;
-        if (timer == 26){
-         timer = -5;
-         leftSpeed  = maxSpeed;
-         rightSpeed = maxSpeed;
-         ledValue[8] = 0;
-         flag3 = false;
-        }
+    // if (distance[0]+distance[7] > 900 && (distance[2] >= distance[5] - 100 && distance[2] <= distance[5] + 100) || uturn) {
+    if (distance[0]+distance[7] > 600 && (distance[2] >= 200 && distance[5] >= 200) || uturn) {
+      // System.out.println("U-Turn"+uturn+":"+dori);
+      if(uturn == false){
+        startori = dori;
+        System.out.println("startori: "+dori);
       }
+      uturn = true;
+      lturn = false;
+      rturn = false;
+
+      ledValue[8] = 1;
+
+      leftSpeed  = -maxSpeed;
+      rightSpeed = maxSpeed;
+
+      if(startori + 3.1 < dori){
+        uturn = false;
+        ledValue[8] = 0;
+
+        leftSpeed  = maxSpeed;
+        rightSpeed = maxSpeed;
+      }
+      
     }
-    else if (distance[0]+distance[7] > 900 && distance[5] > distance[2] || flag1) {
-      // System.out.print("Turn Right"+flag1+":"+timer);
+    else if (distance[0]+distance[7] > 900 && distance[5] > distance[2] || rturn) {
+      // System.out.println("Turn Right"+rturn+":"+timer);
       if (timer++ >= 1) {
         leftSpeed  = maxSpeed;
         rightSpeed = -maxSpeed;
         ledValue[8] = 1;
-        flag1 = true;
+        rturn = true;
         if (timer == 14){
          timer = -1;
          leftSpeed  = maxSpeed;
          rightSpeed = maxSpeed;
          ledValue[8] = 0;
-         flag1 = false;
-         flag3 = false;
+         rturn = false;
+         uturn = false;
         }
       }
     }
-    else if (distance[0]+distance[7] > 900 && distance[2] > distance[5] || flag2) {
-      // System.out.print("Turn Left"+flag2+":"+timer);
+    else if (distance[0]+distance[7] > 900 && distance[2] > distance[5] || lturn) {
+      // System.out.println("Turn Left"+lturn+":"+timer);
       if (timer++ >= 1) {
         leftSpeed  = -maxSpeed;
         rightSpeed = maxSpeed;
         ledValue[8] = 1;
-        flag2 = true;
+        lturn = true;
         if (timer == 14){
          timer = -1;
          leftSpeed  = maxSpeed;
          rightSpeed = maxSpeed;
          ledValue[8] = 0;
-         flag2 = false;
-         flag3 = false;
+         lturn = false;
+         uturn = false;
         }
       }
     }
@@ -348,7 +369,6 @@ public class Rat0 extends Robot {
     | .__/|_|  |_|_| |_|\__|___|_| |_| |_|\__,_/___\___|
     |_|                   |_____|
     */
-    // System.out.print("print\n");
 
     int w = 16;
     int h = 16;
@@ -356,7 +376,7 @@ public class Rat0 extends Robot {
   	int i, j;
 
 
-  	System.out.print("print\n");
+  	// System.out.print("print\n");
 
   	// for(j=0; j<h*2+1; j++){ //Left POV
   	for(j=h*2; j>=0; j--){ //Left POV
@@ -415,10 +435,10 @@ public class Rat0 extends Robot {
 
   		  }else{ // i -> cell value
 
-  //			System.out.print("%.3d",i/2+(j/2)*h);
-  //			  System.out.print("%.2d,%.2d",i/2,j/2);
-  //			  System.out.print("%.3d",maze[i/2][j/2][4]);
-  //			 System.out.print("   ");
+    			// System.out.print("%.3d",i/2+(j/2)*h);
+    			// System.out.print("%.2d,%.2d",i/2,j/2);
+    			// System.out.print("%.3d",maze[i/2][j/2][4]);
+    			// System.out.print("   ");
   			  if(maze[i/2][j/2][4]>=0){
   				  System.out.printf("%03d",maze[i/2][j/2][4]);
   			  }else{
