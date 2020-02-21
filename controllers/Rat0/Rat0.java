@@ -243,34 +243,48 @@ public class Rat0 extends Robot {
     // System.out.print("estimated distance covered by right wheel: "+rdis+" m.\n");
     // System.out.print("estimated change of orientation: "+dori+" rad.\n");
 
+
+    // System.out.println("rdiff: "+rdiff+" ldiff: "+ldiff);
+   if(!step && ldis >0 && rdis > 0){
+      // System.out.println("STEP");
+      oldpos[0] = ldis;
+      oldpos[1] = rdis;
+      // System.out.println("Saved:oldpos0: "+ldis+" oldpos1: "+rdis);
+      step = true;
+    }
+
     //step while turning
+    double rdiff = ldis-oldpos[0];
+    double ldiff = rdis-oldpos[1];
+
+    if(rdiff < 0){
+      rdiff = 0;
+    }
+    if(ldiff < 0){
+      ldiff = 0;
+    }
     if(step && (uturn || rturn || lturn)){
-      double rdiff = ldis-oldpos[0];
-      double ldiff = rdis-oldpos[1];
-      // System.out.println("STEP+TURN: left= "+rdiff+" right= "+rdiff);
-      if(rdiff > 0.08 && ldiff > 0.8){
-        counter++;
+      // System.out.println("STEP+TURN: left= "+rdiff+" right= "+rdiff+"rturn: "+rturn+" lturn: "+lturn+" uturn: "+uturn);
+      if(rdiff > 0.08 && ldiff > 0.08){
+        System.out.println("Counter++: "+ (++counter));
+        rdiff = 0;
+        ldiff = 0;
       }
       step = false;
 
     }
 
-    if(!step && ldis >0 && rdis > 0){
-      // System.out.println("STEP");
-      oldpos[0] = ldis;
-      oldpos[1] = rdis;
-      // System.out.println("oldpos0: "+ldis+" oldpos1: "+rdis);
-      step = true;
-    }
 
-    if(step){
-      if(oldpos[0]+0.1075136 < ldis && oldpos[1]+0.1075136 < rdis){
-        System.out.println("oldpos0: "+oldpos[0]+" oldpos1: "+oldpos[1]);
-        System.out.println("Counter: "+(++counter));
-        step = false;   
-      }
-      // System.out.println("0: "+ldis+" 1: "+rdis);
+    //strait step
+    if(step && rdiff > 0.1075136 && ldiff > 0.1075136){
+      // System.out.println("oldpos0: "+oldpos[0]+" oldpos1: "+oldpos[1]);
+      System.out.println("rdiff: "+rdiff+" ldiff: "+ldiff);
+      System.out.println("Counter: "+(++counter));
+      rdiff = 0;
+      ldiff = 0;
+      step = false;
     }
+      // System.out.println("step: "+step);
 
     /*
       _____
@@ -303,7 +317,7 @@ public class Rat0 extends Robot {
         leftSpeed  = maxSpeed;
         rightSpeed = maxSpeed;
       }
-      
+
     }
     else if (distance[0]+distance[7] > 900 && distance[5] > distance[2] || rturn) {
       // System.out.println("Turn Right"+rturn+":"+timer);
