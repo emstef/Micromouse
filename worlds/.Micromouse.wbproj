@@ -11,7 +11,7 @@ viewpointLocked: 0
 orthographicViewHeight: 1.04082
 textFiles: 1 "controllers/contest_manager/contest_manager.c" "controllers/Rat0/Rat0.java"
 globalOptionalRendering: DistanceSensorRays
-renderingDevicePerspectives: Rat1:camera;0;1;0;0
 renderingDevicePerspectives: Rat0:camera;0;1;0;0
 renderingDevicePerspectives: robot:debug_display;0;1.52381;0;0
 renderingDevicePerspectives: robot:helper_display;0;1;0;0
+renderingDevicePerspectives: Rat1:camera;0;1;0;0

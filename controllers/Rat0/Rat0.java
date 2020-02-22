@@ -53,13 +53,13 @@ public class Rat0 extends Robot {
   protected int counter = 0;
   protected int count = 0;
   protected int countpos = 0;
-  protected int[] currpos = new int[2];
+  protected int[] curr = new int[3]; //i, j ,orientation
 
   protected boolean overR = false;
   protected boolean overL = false;
   protected boolean overU = false;
 
-  protected int[][][] maze = new int[16][16][6]; //0.N 1.E 2.S 3.W 4.Flood 5.Visited
+  protected int[][][] maze = new int[16][16][6]; //0.N 1.E 2.S 3.W 4.Flood 5.Orientation if visited
 
   public Rat0() {
     accelerometer = getAccelerometer("accelerometer");
@@ -82,6 +82,12 @@ public class Rat0 extends Robot {
     rps = rightMotor.getPositionSensor(); //right_position_sensor
     lps.enable(64);
     rps.enable(64);
+
+
+    //Mouse initial possition & orientation
+    curr[0] = 0; // i
+    curr[1] = 0; // j
+    curr[2] = 0; // orientation
     /*
      _____ _                 _   _____ _ _ _
     |  ___| | ___   ___   __| | |  ___(_) | |
@@ -230,7 +236,6 @@ public class Rat0 extends Robot {
       // return either to left or to right when there is an obstacle
       // if (distance[6]+distance[7] > 1800 || distance[0]+distance[1] > 1800) {
 
-      // print_maze(maze);
 
       /*
          ___      _                      _
@@ -286,7 +291,7 @@ public class Rat0 extends Robot {
     //strait step
     if(step && rdiff > 0.1075136 && ldiff > 0.1075136){
       // System.out.println("oldpos0: "+oldpos[0]+" oldpos1: "+oldpos[1]);
-      System.out.println("rdiff: "+rdiff+" ldiff: "+ldiff);
+      // System.out.println("rdiff: "+rdiff+" ldiff: "+ldiff);
       counter++;
       System.out.println("Counter: "+counter);
       rdiff = 0;
@@ -305,11 +310,28 @@ public class Rat0 extends Robot {
     */
 
     if(counter > count){
+      //new possition
+      switch(curr[2]){
+        case 0:
+          curr[1]++;
+          break;
+        case 1:
+          curr[0]++;        
+          break;
+        case 2:
+          curr[1]--;
+          break;
+        case 3:
+          curr[0]--;
+          break;
+      }
+
+      //wall detection
       if(distance[0] + distance[7] > 400){
         System.out.println("WALL: FRONT");
         front = true;
       }
-      if(distance[2] > 200){
+      if(distance[2] > 200){ //distance[0]+distance[7] > 900 && distance[5] > distance[2]
         System.out.println("WALL: RIGHT");
         right = true;
       }
@@ -317,28 +339,77 @@ public class Rat0 extends Robot {
         System.out.println("WALL: LEFT");
         left = true;
       }
-      count++;
-    }
-    if(front && right && left){
-      // uturn = true;
-      System.out.println("TURN: UTURN");
-    }
-    else if(front && right){
-      // lturn = true;
-      System.out.println("TURN: LEFT");
-    }
-    else if(front && left){
-      // rturn = true;
-      System.out.println("TURN: RIGHT");
-    }
-    else if(front){
-      overR = true;
-      System.out.println("**TURN: RIGHT");
-    }
 
-    front = false;
-    right = false;
-    left = false;
+      count++; // update to new position
+
+      //turn selection
+      if(front && right && left){
+        overU = true;
+        System.out.println("TURN: UTURN");
+        curr[2] -= 2;
+      }
+      else if(front && right){
+        overL = true;
+        System.out.println("TURN: LEFT");
+        curr[2] -= 1;
+      }
+      else if(front && left){
+        overR = true;
+        System.out.println("TURN: RIGHT");
+        curr[2] += 1;
+      }
+      else if(front){
+        overR = true;
+        System.out.println("**TURN: RIGHT");
+        curr[2] += 1;
+      }
+      
+      //update maze array
+      switch(curr[2]){
+        case 0:
+          if(front){
+            maze[curr[0]][curr[1]][0] = 1;
+            if(curr[1] != 0 || curr[1] != 16) maze[curr[0]][curr[1]+1][2] = 1;
+          }
+          if(right){
+            maze[curr[0]][curr[1]][1] = 1;
+            if(curr[0] != 0 || curr[0] != 16) maze[curr[0]+1][curr[1]][3] = 1;
+          }
+          if(left){
+            maze[curr[0]][curr[1]][3] = 1;
+            // if(curr[0] != 0 || curr[0] != 16) maze[curr[0]-1][curr[1]][1] = 1;
+          }
+          break;
+        case 1:
+                  
+          break;
+        case 2:
+          
+          break;
+        case 3:
+          
+          break;
+      }
+
+
+      front = false;
+      right = false;
+      left = false;
+
+      //orientation in bounds
+      if(curr[2] == 4)
+        curr[2] = 0;
+      else if(curr[2] == -1)
+        curr[2] = 3;
+      else if(curr[2] == -2)
+        curr[2] = 2;
+      else if(curr[2] == 5)
+        curr[2] = 1;
+
+      print_maze(maze);
+
+      System.out.println("POSITION: ["+curr[0]+","+curr[1]+"] Orientation: "+curr[2]);
+    }
 
     /*
       _____
@@ -380,7 +451,7 @@ public class Rat0 extends Robot {
         // System.out.println("startori: "+dori);
       }
       // uturn = true;
-      // lturn = false;
+      lturn = false;
       rturn = true;
       overR = false;
 
