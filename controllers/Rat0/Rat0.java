@@ -15,7 +15,7 @@ public class Rat0 extends Robot {
   protected final int timeStep = 32;
   protected final double maxSpeed = 800;
   protected final double superSpeed = 1000; //ADDED
-  protected final double[] collisionAvoidanceWeights = {0.06,0.03,0.015,0.0,0.0,-0.015,-0.03,-0.06};
+  protected final double[] collisionAvoidanceWeights = {0.06,0.03,0.0015,0.0,0.0,-0.0015,-0.03,-0.06};
   //                                                        0    1      2      3    4   5     6   7
   // protected final double[] collisionAvoidanceWeights = {-0.002,-0.005,-0.015,-0.6,0.3,0.005,0.0,0.0};{-0.002,-0.005,-0.015,-0.6,0.3,0.005,0.0,0.0};
   //                                                    0   1    2   3   4   5    6     7
@@ -331,16 +331,77 @@ public class Rat0 extends Robot {
         System.out.println("WALL: FRONT");
         front = true;
       }
-      if(distance[2] > 200){ //distance[0]+distance[7] > 900 && distance[5] > distance[2]
+      if(distance[2] > 150){ //distance[0]+distance[7] > 900 && distance[5] > distance[2]
         System.out.println("WALL: RIGHT");
         right = true;
       }
-      if(distance[5] > 200){
+      if(distance[5] > 150){
         System.out.println("WALL: LEFT");
         left = true;
       }
 
       count++; // update to new position
+      
+      //update maze array
+      switch(curr[2]){
+        case 0:
+          System.out.println("North");
+          if(front){
+            maze[curr[0]][curr[1]][0] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]+1][2] = 1;
+          }
+          if(right){
+            maze[curr[0]][curr[1]][1] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]+1][curr[1]][3] = 1;
+          }
+          if(left){
+            maze[curr[0]][curr[1]][3] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]-1][curr[1]][1] = 1;
+          }
+          break;
+        case 1:
+          if(front){
+            maze[curr[0]][curr[1]][1] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]+1][curr[1]][3] = 1;
+          }
+          if(right){
+            maze[curr[0]][curr[1]][2] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]-1][0] = 1;
+          }
+          if(left){
+             maze[curr[0]][curr[1]][0] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]+1][2] = 1;
+          }
+          break;
+        case 2:
+          if(front){
+            maze[curr[0]][curr[1]][2] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]-1][0] = 1;
+          }
+          if(right){
+            maze[curr[0]][curr[1]][3] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]-1][curr[1]][1] = 1;
+          }
+          if(left){
+            maze[curr[0]][curr[1]][1] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]+1][curr[1]][3] = 1;
+          }
+          break;
+        case 3:
+          if(front){
+            maze[curr[0]][curr[1]][3] = 1;
+            if(curr[0] > 0 && curr[0] < 16) maze[curr[0]-1][curr[1]][1] = 1;
+          }
+          if(right){
+            maze[curr[0]][curr[1]][0] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]+1][2] = 1;
+          }
+          if(left){
+            maze[curr[0]][curr[1]][2] = 1;
+            if(curr[1] > 0 && curr[1] < 16) maze[curr[0]][curr[1]-1][0] = 1;
+          }
+          break;
+      }
 
       //turn selection
       if(front && right && left){
@@ -362,33 +423,6 @@ public class Rat0 extends Robot {
         overR = true;
         System.out.println("**TURN: RIGHT");
         curr[2] += 1;
-      }
-      
-      //update maze array
-      switch(curr[2]){
-        case 0:
-          if(front){
-            maze[curr[0]][curr[1]][0] = 1;
-            if(curr[1] != 0 || curr[1] != 16) maze[curr[0]][curr[1]+1][2] = 1;
-          }
-          if(right){
-            maze[curr[0]][curr[1]][1] = 1;
-            if(curr[0] != 0 || curr[0] != 16) maze[curr[0]+1][curr[1]][3] = 1;
-          }
-          if(left){
-            maze[curr[0]][curr[1]][3] = 1;
-            // if(curr[0] != 0 || curr[0] != 16) maze[curr[0]-1][curr[1]][1] = 1;
-          }
-          break;
-        case 1:
-                  
-          break;
-        case 2:
-          
-          break;
-        case 3:
-          
-          break;
       }
 
 
@@ -603,11 +637,11 @@ public class Rat0 extends Robot {
               break;
             default:
               // if(j<2) break;
-              if(maze[i/2][(j-2)/2+1][2]==1){ //South
+              if(maze[i/2][j/2][2]==1 || maze[i/2][j/2-1][0]==1){ //South
     					  System.out.print("---");
-    					  if(maze[i/2][j/2][2] != maze[i/2][(j-2)/2][0] && j!=0){
-    						  System.out.print("ERROR: Neibhour N&S dont match!");
-    					  }
+    					  // if(maze[i/2][j/2][2] != maze[i/2][(j-2)/2][0] && j!=0){
+    						 //  System.out.print("ERROR: Neibhour N&S dont match!");
+    					  // }
     				  }else
     					  System.out.print("   ");
   			  }
@@ -625,7 +659,7 @@ public class Rat0 extends Robot {
     					  System.out.print(" ");
               break;
             default:
-    				  if(maze[(i-2)/2][j/2][1]==1){ //East
+    				  if(maze[i/2-1][j/2][1]==1 || maze[i/2][j/2][3]==1){ //East
     					  System.out.print("|");
     					  // if(maze[(i-2)/2][j/2][1] != maze[i/2][j/2][3] && i!=h*2){
     						//   System.out.print("ERROR: Neibhour E&W dont match!");
