@@ -15,14 +15,14 @@ public class Rat0 extends Robot {
   protected final int timeStep = 32;
   protected final double maxSpeed = 800;
   protected final double superSpeed = 1000; //ADDED
-  // protected final double[] collisionAvoidanceWeights = {0.06,0.03,0.015,0.0,0.0,-0.015,-0.03,-0.06};
+  protected final double[] collisionAvoidanceWeights = {0.06,0.03,0.015,0.0,0.0,-0.015,-0.03,-0.06};
   //                                                        0    1      2      3    4   5     6   7
   // protected final double[] collisionAvoidanceWeights = {-0.002,-0.005,-0.015,-0.6,0.3,0.005,0.0,0.0};{-0.002,-0.005,-0.015,-0.6,0.3,0.005,0.0,0.0};
   //                                                    0   1    2   3   4   5    6     7
-  protected final double[] collisionAvoidanceWeights = {0.0,0.03,0.02,0.0,0.0,-0.02,-0.03,0.0};
+  // protected final double[] collisionAvoidanceWeights = {0.0,0.03,0.02,0.0,0.0,-0.02,-0.03,0.0};
 
   // protected final double[] slowMotionWeights = {0.0125,0.00625,0.0,0.0,0.0,0.0,0.00625,0.0125};
-  protected final double[] slowMotionWeights = {0.3,0.1,0.0,0.0,0.0,0.0,0.1,0.3};
+  protected final double[] slowMotionWeights = {0.4,0.1,0.01,0.0,0.0,0.01,0.1,0.4};
 
   //ADDED
   protected final double wheelRadius = 0.02;
@@ -51,6 +51,13 @@ public class Rat0 extends Robot {
   protected double[] oldpos = new double[2];
   protected boolean step = false;
   protected int counter = 0;
+  protected int count = 0;
+  protected int countpos = 0;
+  protected int[] currpos = new int[2];
+
+  protected boolean overR = false;
+  protected boolean overL = false;
+  protected boolean overU = false;
 
   protected int[][][] maze = new int[16][16][6]; //0.N 1.E 2.S 3.W 4.Flood 5.Visited
 
@@ -184,13 +191,10 @@ public class Rat0 extends Robot {
   }
   public void run() {
 
-
-
     int blink = 0;
     int oldDx = 0;
     // Random r = new Random();
     boolean turn = false;
-    boolean right = false;
     boolean seeFeeder = false;
     double battery;
     double oldBattery = -1.0;
@@ -204,6 +208,9 @@ public class Rat0 extends Robot {
     boolean rturn = false;
     boolean lturn = false;
     boolean uturn = false;
+    boolean front = false;
+    boolean right = false;
+    boolean left = false;
 
     while (step(timeStep) != -1) {
 
@@ -266,7 +273,8 @@ public class Rat0 extends Robot {
     if(step && (uturn || rturn || lturn)){
       // System.out.println("STEP+TURN: left= "+rdiff+" right= "+rdiff+"rturn: "+rturn+" lturn: "+lturn+" uturn: "+uturn);
       if(rdiff > 0.08 && ldiff > 0.08){
-        System.out.println("Counter++: "+ (++counter));
+        counter++;
+        System.out.println("Counter++: "+counter);
         rdiff = 0;
         ldiff = 0;
       }
@@ -279,12 +287,58 @@ public class Rat0 extends Robot {
     if(step && rdiff > 0.1075136 && ldiff > 0.1075136){
       // System.out.println("oldpos0: "+oldpos[0]+" oldpos1: "+oldpos[1]);
       System.out.println("rdiff: "+rdiff+" ldiff: "+ldiff);
-      System.out.println("Counter: "+(++counter));
+      counter++;
+      System.out.println("Counter: "+counter);
       rdiff = 0;
       ldiff = 0;
       step = false;
     }
       // System.out.println("step: "+step);
+
+    /*
+                    _ _        _      _            _   _              
+     __      ____ _| | |    __| | ___| |_ ___  ___| |_(_) ___  _ __  
+     \ \ /\ / / _` | | |   / _` |/ _ \ __/ _ \/ __| __| |/ _ \| '_ \ 
+      \ V  V / (_| | | |  | (_| |  __/ ||  __/ (__| |_| | (_) | | | |
+       \_/\_/ \__,_|_|_|___\__,_|\___|\__\___|\___|\__|_|\___/|_| |_|
+                      |_____|                                        
+    */
+
+    if(counter > count){
+      if(distance[0] + distance[7] > 400){
+        System.out.println("WALL: FRONT");
+        front = true;
+      }
+      if(distance[2] > 200){
+        System.out.println("WALL: RIGHT");
+        right = true;
+      }
+      if(distance[5] > 200){
+        System.out.println("WALL: LEFT");
+        left = true;
+      }
+      count++;
+    }
+    if(front && right && left){
+      // uturn = true;
+      System.out.println("TURN: UTURN");
+    }
+    else if(front && right){
+      // lturn = true;
+      System.out.println("TURN: LEFT");
+    }
+    else if(front && left){
+      // rturn = true;
+      System.out.println("TURN: RIGHT");
+    }
+    else if(front){
+      overR = true;
+      System.out.println("**TURN: RIGHT");
+    }
+
+    front = false;
+    right = false;
+    left = false;
 
     /*
       _____
@@ -295,15 +349,15 @@ public class Rat0 extends Robot {
 
     */
     // if (distance[0]+distance[7] > 900 && (distance[2] >= distance[5] - 100 && distance[2] <= distance[5] + 100) || uturn) {
-    if (distance[0]+distance[7] > 600 && (distance[2] >= 200 && distance[5] >= 200) || uturn) {
+    if ((distance[0]+distance[7] > 600 && (distance[2] >= 200 && distance[5] >= 200) || uturn) || overU){
       // System.out.println("U-Turn"+uturn+":"+dori);
       if(uturn == false){
         startori = dori;
-        System.out.println("startori: "+dori);
+        // System.out.println("startori: "+dori);
       }
       uturn = true;
-      lturn = false;
-      rturn = false;
+      overU = false;
+
 
       ledValue[8] = 1;
 
@@ -319,43 +373,56 @@ public class Rat0 extends Robot {
       }
 
     }
-    else if (distance[0]+distance[7] > 900 && distance[5] > distance[2] || rturn) {
+    else if ((distance[0]+distance[7] > 900 && distance[5] > distance[2] || rturn) || overR){
       // System.out.println("Turn Right"+rturn+":"+timer);
-      if (timer++ >= 1) {
-        leftSpeed  = maxSpeed;
-        rightSpeed = -maxSpeed;
-        ledValue[8] = 1;
-        rturn = true;
-        if (timer == 14){
-         timer = -1;
-         leftSpeed  = maxSpeed;
-         rightSpeed = maxSpeed;
-         ledValue[8] = 0;
-         rturn = false;
-         uturn = false;
-        }
+       if(rturn == false){
+        startori = dori;
+        // System.out.println("startori: "+dori);
       }
-    }
-    else if (distance[0]+distance[7] > 900 && distance[2] > distance[5] || lturn) {
-      // System.out.println("Turn Left"+lturn+":"+timer);
-      if (timer++ >= 1) {
-        leftSpeed  = -maxSpeed;
-        rightSpeed = maxSpeed;
-        ledValue[8] = 1;
-        lturn = true;
-        if (timer == 14){
-         timer = -1;
-         leftSpeed  = maxSpeed;
-         rightSpeed = maxSpeed;
-         ledValue[8] = 0;
-         lturn = false;
-         uturn = false;
-        }
-      }
-    }
+      // uturn = true;
+      // lturn = false;
+      rturn = true;
+      overR = false;
 
-    //Center correction
-    if ((distance[2] >= 200 && distance[5] >= 200))
+
+      ledValue[8] = 1;
+
+      leftSpeed  = maxSpeed;
+      rightSpeed = -maxSpeed;
+
+      if(startori - 1.4 > dori){
+        rturn = false;
+        ledValue[8] = 0;
+
+        leftSpeed  = maxSpeed;
+        rightSpeed = maxSpeed;
+      }
+    }
+    else if ((distance[0]+distance[7] > 900 && distance[2] > distance[5] || lturn) || overL){
+      // System.out.println("Turn Left"+lturn+":"+timer);
+      if(lturn == false){
+        startori = dori;
+        // System.out.println("startori: "+dori);
+      }
+      // uturn = true;
+      lturn = true;
+      // rturn = true;
+      overL = false;
+
+
+      ledValue[8] = 1;
+
+      leftSpeed  = -maxSpeed;
+      rightSpeed = maxSpeed;
+
+      if(startori + 1.4 < dori){
+        lturn = false;
+        ledValue[8] = 0;
+
+        leftSpeed  = maxSpeed;
+        rightSpeed = maxSpeed;
+      }
+    }
 
       if (blink++ >= 5) { // blink the back LEDs
         ledValue[6] = 0;
@@ -373,6 +440,55 @@ public class Rat0 extends Robot {
     }
     // Enter here exit cleanup code
   }
+
+  // public void turn(int where){
+  //   switch(){
+  //     case 0: //right
+
+  //       break;
+  //      case 1: // left
+
+  //       break;
+
+  //   }
+  // }
+
+  // public void flood_fill(int[][][] maze, int mx, int my){
+  //   //fills the flood array with values using flood fill logic
+  //   int k=0;
+  //   while(maze[mx][my][4]==-1){  //stops filling when the flood fill reaches the micromouse's position
+  // //    System.out.print("OK: %d\n",k);
+  //     for(int i=15;i>=0;i--){
+  //       for(int j=15;j>=0;j--){
+  //         if(maze[i][j][4]==k){  //if the flood array space equals k (starting at 0), place k+1 in adjacent flood array spaces
+  //           if(j+1<16){
+  //             if(maze[i][j+1][2]==0 && (maze[i][j+1][4]==-1)){  //North
+  //               maze[i][j+1][4] = maze[i][j][4] + 1;
+  //             }
+  //           }
+  //           if(j-1>=0){
+  //             if(maze[i][j-1][0]==0 && (maze[i][j-1][4]==-1)){  //South
+  //               maze[i][j-1][4] = maze[i][j][4] + 1;
+  //             }
+  //           }
+  //           if(i+1<16){
+  //             if(maze[i+1][j][3]==0 && (maze[i+1][j][4]==-1)){  //West
+  //               maze[i+1][j][4] = maze[i][j][4] + 1;
+  //             }
+  //           }
+  //           if(i-1>=0){
+  //             if(maze[i-1][j][1]==0 && (maze[i-1][j][4]==-1)){  //East
+  //               maze[i-1][j][4] = maze[i][j][4] + 1;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //     k++;
+  // //    if(k>50)
+  // //      break;
+  //   }
+  // }
 
   public void print_maze(int[][][] maze){
     /*
