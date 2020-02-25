@@ -24,5 +24,6 @@
 void init_round();
 void run_round();
 void cleanup_round();
+void display_set();
 
 #endif

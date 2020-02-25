@@ -98,14 +98,15 @@ genetate_saved_maze(maze);
   //update_wall_textures(helper_display);
 
   // setup the round
-  init_round();
+  //init_round();
 
   // make sure everything is set up before running the contest
   step(0);
 
   // run the round
   while (1) {
-    run_round();
+    //run_round();
+    display_set();
     step(TIME_STEP);
   }
 

@@ -227,3 +227,12 @@ void cleanup_round() {
   for (i = 0; i < 2; i++)
     free(competitor[i]);
 }
+
+void display_set(){
+  char message[128];
+
+  // snprintf(message, 128, "%s vs %s", competitor[R0], competitor[R1]);
+  snprintf(message, 128, "Micromouse");
+  wb_supervisor_set_label(FIRST_LABEL, message, 0.0, 0.0, 0.1, WHITE, 0.0, "Arial");
+  // snprintf(message, 128, "%d.%d.%d", date->tm_mday, date->tm_mon + 1, date->tm_year + 1900);
+}

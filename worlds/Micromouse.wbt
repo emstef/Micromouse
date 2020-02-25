@@ -2443,7 +2443,7 @@ DEF R0 E-puck {
   name "Rat0"
   controller "Rat0"
   battery [
-    200, 100, 1000
+    20000, 100, 1000
   ]
   turretSlot [
     DEF EPUCK_FLAG E-puckFlag {
