@@ -20,8 +20,8 @@ public class Rat0 extends Robot {
   //                                                        0   1    2      3   4   5    6     7
   protected final double[] collisionAvoidanceWeights = {0.075,0.05,0.02,0.0,0.0,-0.02,-0.05,-0.075};
 
-  // protected final double[] slowMotionWeights = {0.0125,0.00625,0.0,0.0,0.0,0.0,0.00625,0.0125};
-  protected final double[] slowMotionWeights = {0.4,0.1,0.01,0.0,0.0,0.01,0.1,0.4};
+  protected final double[] slowMotionWeights = {0.0125,0.00625,0.0,0.0,0.0,0.0,0.00625,0.0125};
+  // protected final double[] slowMotionWeights = {0.4,0.1,0.01,0.0,0.0,0.01,0.1,0.4};
 
   //ADDED
   protected final double wheelRadius = 0.02;
@@ -565,6 +565,8 @@ public class Rat0 extends Robot {
           curr[2] -= 1;
         }
       }
+      else
+        System.out.println("going straight");
 
       //orientation in bounds
       if(curr[2] == 4)
@@ -621,7 +623,7 @@ public class Rat0 extends Robot {
       }
 
     }
-    else if (rturn || overR){
+    else if (rturn || overR){ //distance[0]+distance[7] > 900 && distance[5] > distance[2] ||
       // System.out.println("Turning: RIGHT>>");
       if(rturn == false){
         startori = dori;
@@ -646,7 +648,7 @@ public class Rat0 extends Robot {
         rightSpeed = maxSpeed;
       }
     }
-    else if (lturn || overL){
+    else if (lturn || overL){ //distance[0]+distance[7] > 900 && distance[5] < distance[2] || 
       // System.out.println("Turning: LEFT>>");
       if(lturn == false){
         startori = dori;
