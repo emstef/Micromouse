@@ -1,4 +1,10 @@
-theme: jekyll-theme-cayman
+#Basics
 title: [Micromouse in Webots]
 description: [This is a presentation website for my COM513 course.]
+author: Manos Stefanakis
+email: estefanakis1@isc.tuc.gr
+
+# Build settings
+#markdown: kramdown
+theme: jekyll-theme-cayman
 show_downloads: true
