@@ -1,8 +1,8 @@
 #Basics
 title: Micromouse in Webots
 description: This is a presentation website for my COM513 course.
-author: Manos Stefanakis
-#email: estefanakis1@isc.tuc.gr
+#author: Manos Stefanakis
+email: estefanakis1@isc.tuc.gr
 
 # Build settings
 #markdown: kramdown
