@@ -2,7 +2,7 @@
 Author: Emmanouil Stefanakis
 
 Micromouse is a competition where a small mouse robot solves a 16x16 block maze.
-####[COMP513]
+#### [COMP513]
 
 ### Micromouse
 1. Maze Solving: 
