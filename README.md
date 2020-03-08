@@ -5,12 +5,7 @@ This project is an attempt to develop the Micromouse competition in Webots, a 3D
 # What is Micromouse?
 One image is worth a thousand words. So this is will spare me some effort:
 
-[![Micromouse](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)](http://www.youtube.com/watch?v=NqdZ9wbXt8k "2018 Taiwan Classic micromouse First prize winner")
-
-![VIDEO](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)
-
-[VIDEO](https://youtu.be/NqdZ9wbXt8k)
-
+[![Micromouse](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)](http://www.youtube.com/watch?v=NqdZ9wbXt8k "2018 Taiwan Classic micromouse First prize winner"){:height="100px" width="300px"}
 
 Micromouse is a contest where a small autonomous robot shall race to the centre of a maze. In the previous video you can watch the micromouse complete 5 runs to the centre. The first run is a search run and the rest are race runs. The mouse has no other information than its starting position (which is always at a corner of the maze with its left side facing the frame of the maze), the size of the maze and that it must reach the centre. In order to calculate the best path to the centre the first run is used to map the maze and it is called a search run. When the mouse makes a race run it might try to explore the maze on its way back to the starting cell.
 The maze is meticulously designed to give prominence to the more sophisticated autonomous agents that might take advantage of it in order to minimised their run time. Note that the best path to the centre is not necessarily the shortest because a mouse can go faster when it does not have to turn.
