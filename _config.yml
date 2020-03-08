@@ -4,6 +4,6 @@ description: This is a presentation website for my COM513 course.
 
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 theme: jekyll-theme-cayman
 show_downloads: true
