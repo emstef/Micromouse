@@ -5,7 +5,7 @@ This project is an attempt to develop the Micromouse competition in Webots, a 3D
 # What is Micromouse?
 One image is worth a thousand words. So this is will spare me some effort:
 
-[![Micromouse](http://img.youtube.com/vi/https://youtu.be/NqdZ9wbXt8k/1.jpg)](http://www.youtube.com/watch?v=NqdZ9wbXt8k "2018 Taiwan Classic micromouse First prize winner")
+[![Micromouse](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)](http://www.youtube.com/watch?v=NqdZ9wbXt8k "2018 Taiwan Classic micromouse First prize winner")
 
 ![VIDEO](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)
 
