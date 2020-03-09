@@ -29,7 +29,7 @@ The first part is written in C programming language and the second one in Java, 
 At the first stage, I had to tweak the maze generation implementation of the Rat’s Life demo in order to:
 1. Create a 16x16 maze, not a 10x10: This sounds easier than it actually is. Besides changing the values in the relative variables, I had to add each wall via the GUI. That meant I had to create almost 150 walls one by one. I was very lucky I got frustrated and tried every possible way not to do that, and I found out that by editing the world (.wbt) file more walls appeared in the environment. I did the same thing for the links that go between the walls.
 
-2. I wanted to use an archive (https://github.com/micromouseonline/micromouse_maze_tool/tree/master/mazefiles) that I found that had more than 400 maze designs from previous contests and also some practice designs for, well, practising. So, by overriding the previous generation process I copied an already generated matrix from the archive to the dedicated function. A more elegant way would be to parse the selected file and import the design or even choose a random maze design, but, again, there was not enough time… 
+2. I wanted to use an [archive](https://github.com/micromouseonline/micromouse_maze_tool/tree/master/mazefiles) that I found that had more than 400 maze designs from previous contests and also some practice designs for, well, practising. So, by overriding the previous generation process I copied an already generated matrix from the archive to the dedicated function. A more elegant way would be to parse the selected file and import the design or even choose a random maze design, but, again, there was not enough time… 
 Moreover, the robot always had to start from the same position in any maze, so that was taken care of as well. Anything that was not useful from the demo, like the feeders or the extra e-puck robot, was removed
 
 The last stage of the development was the actual programming of the autonomous agent. I will mention the basic principals behind the logic of the agent but not in detail due to my bare bones implementation and there are plenty of sources that go in depth for each of them.
@@ -45,11 +45,16 @@ Is a search algorithm very useful for path planning in mazes. By assigning the v
 # Results
 
 # References
+- [Micromouse Online](http://www.micromouseonline.com/)
+- [Micromouse USA](http://www.micromouseusa.com/)
+- [Ng Beng Kiat’s site](https://sites.google.com/site/ngbengkiat/)
+- [Kato’s Micromouse Wiki](https://seesaawiki.jp/w/robolabo/d/Tetra)
 
 ### Paradox
 The last week that the deadline was due I was in Birmingham, UK a few hundrend meter (or yards I should say) away from Birmingham University where the biggest Micromouse competition in Europe takes place every year. I did not even visit because I was a bit behind on the deadline and I had no spare time. 
 
 
 
-#### Author: Emmanouil Stefanakis
-#### email: estefanakis1@isc.tuc.gr
+|Author | Emmanouil Stefanakis|
+|--------|----------|
+|email| estefanakis1@isc.tuc.gr|
