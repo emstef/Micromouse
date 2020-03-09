@@ -53,7 +53,7 @@ Is a search algorithm very useful for path planning in mazes. By assigning the v
 - [Micromouse Online Github page](https://github.com/micromouseonline)
 
 ### Paradox
-The last week that the deadline was due I was in Birmingham, UK a few hundrend meter (or yards I should say) away from Birmingham University where the biggest Micromouse competition in Europe takes place every year. I did not even visit because I was a bit behind on the deadline and I had no spare time. 
+The last week that the deadline was due I was in Birmingham, UK a few hundrend meters(or yards I should say) away from Birmingham University where the biggest Micromouse competition in Europe takes place every year. I did not even visit because I was a bit behind on the deadline and I had no spare time. 
 
 
 
