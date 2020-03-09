@@ -49,6 +49,8 @@ Is a search algorithm very useful for path planning in mazes. By assigning the v
 - [Micromouse USA](http://www.micromouseusa.com/)
 - [Ng Beng Kiat’s site](https://sites.google.com/site/ngbengkiat/)
 - [Kato’s Micromouse Wiki](https://seesaawiki.jp/w/robolabo/d/Tetra)
+- [Analysis of Micromouse Maze Solving Algorithms](http://web.cecs.pdx.edu/~edam/Reports/2001/DWillardson.pdf)
+- [Micromouse Online Github page](https://github.com/micromouseonline)
 
 ### Paradox
 The last week that the deadline was due I was in Birmingham, UK a few hundrend meter (or yards I should say) away from Birmingham University where the biggest Micromouse competition in Europe takes place every year. I did not even visit because I was a bit behind on the deadline and I had no spare time. 
