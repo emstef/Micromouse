@@ -43,6 +43,26 @@ Using the starting position as a point of reference we can then move through the
 Is a search algorithm very useful for path planning in mazes. By assigning the value zero to the destination cell’s weight we can then program the robot to follow the shortest path to the centre.
 
 # Results
+This is the Rat's life demo that was used:
+![Rat's Life](https://github.com/emstef/Micromouse/blob/master/assets/ratslife_1.png)
+
+This is the Micromouse world:
+![Microuse](https://github.com/emstef/Micromouse/blob/master/assets/Micromouse.png)
+
+And this is the e-puck robot that served the role of the micromouse:
+![e-puck](https://github.com/emstef/Micromouse/blob/master/assets/epuck.png)
+ 
+These are some samples of the maps that were loaded from the archive:
+|![map1](https://github.com/emstef/Micromouse/blob/master/assets/test_maze.png)|![map2](https://github.com/emstef/Micromouse/blob/master/assets/1stworld.png)|
+|---|---|
+|![map3](https://github.com/emstef/Micromouse/blob/master/assets/map3.png)| ![map4](https://github.com/emstef/Micromouse/blob/master/assets/map4.png)|
+
+This is a preview of the mapping array that the mouse constructs while running through the maze:
+![cosnole](https://github.com/emstef/Micromouse/blob/master/assets/micro_console.gif)
+Note: Orientation 0: North 1: East 2: South 3: West 
+
+And the final result, the mouse reaching its goal:
+![finaly](https://github.com/emstef/Micromouse/blob/master/assets/maze_complete.gif)
 
 # References
 - [Micromouse Online](http://www.micromouseonline.com/)
