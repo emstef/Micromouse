@@ -46,15 +46,15 @@ Is a search algorithm very useful for path planning in mazes. By assigning the v
 # Results
 This is the Rat's life demo that was used:
 
-[![Rat's Life](https://github.com/emstef/Micromouse/blob/master/assets/ratslife_1.png)](https://github.com/emstef/Micromouse/tree/master/assets)
+![Rat's Life](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/ratslife_1.png)
 
 This is the Micromouse world:
 
-![Microuse](https://github.com/emstef/Micromouse/blob/master/assets/Micromouse.png)
+![Microuse](https://raw.githubusercontent.com/emstef/Micromouse/blob/master/assets/Micromouse.png)
 
 And this is the e-puck robot that served the role of the micromouse:
 
-![e-puck](https://github.com/emstef/Micromouse/blob/master/assets/epuck.png)
+![e-puck](https://raw.githubusercontent.com/emstef/Micromouse/blob/master/assets/epuck.png)
  
 These are some samples of the maps that were loaded from the archive:
 
@@ -69,7 +69,7 @@ This is a preview of the mapping array that the mouse constructs while running t
 
 And the final result, the mouse reaching its goal:
 
-![finaly](https://raw.githubusercontent.com/emstef/Micromouse/blob/master/assets/maze_complete.gif)
+![finaly](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/maze_complete.gif)
 
 # References
 - [Micromouse Online](http://www.micromouseonline.com/)
