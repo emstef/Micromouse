@@ -4,6 +4,7 @@ This project is an attempt to develop the Micromouse competition in Webots, a 3D
 
 # What is Micromouse?
 One image is worth a thousand words. So this is will spare me some effort:
+##### Click to open video (does not open in a new tab)
 
 [![Micromouse](https://i.ytimg.com/vi_webp/NqdZ9wbXt8k/maxresdefault.webp)](http://www.youtube.com/watch?v=NqdZ9wbXt8k "2018 Taiwan Classic micromouse First prize winner")
 
@@ -59,7 +60,7 @@ These are some samples of the maps that were loaded from the archive:
 
 This is a preview of the mapping array that the mouse constructs while running through the maze:
 ![cosnole](https://github.com/emstef/Micromouse/blob/master/assets/micro_console.gif)
-Note: Orientation 0: North 1: East 2: South 3: West 
+##### Note: Orientation 0: North 1: East 2: South 3: West 
 
 And the final result, the mouse reaching its goal:
 ![finaly](https://github.com/emstef/Micromouse/blob/master/assets/maze_complete.gif)
