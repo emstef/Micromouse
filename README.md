@@ -58,7 +58,7 @@ And this is the e-puck robot that served the role of the micromouse:
  
 These are some samples of the maps that were loaded from the archive:
 
-| ![map1](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/1stworld.png) | ![map2](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/1stworld.png) |
+| ![map1](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/test_maze.png) | ![map2](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/1stworld.png) |
 |---|---|
 | ![map3](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/map3.png) | ![map4](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/map4.png) |
 
