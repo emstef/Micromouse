@@ -46,7 +46,7 @@ Is a search algorithm very useful for path planning in mazes. By assigning the v
 # Results
 This is the Rat's life demo that was used:
 
-![Rat's Life](https://github.com/emstef/Micromouse/blob/master/assets/ratslife_1.png)
+[![Rat's Life](https://github.com/emstef/Micromouse/blob/master/assets/ratslife_1.png)](https://github.com/emstef/Micromouse/tree/master/assets)
 
 This is the Micromouse world:
 
