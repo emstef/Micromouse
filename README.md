@@ -60,7 +60,7 @@ These are some samples of the maps that were loaded from the archive:
 
 | ![map1](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/1stworld.png) | ![map2](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/1stworld.png) |
 |---|---|
-| ![map3](https://raw.githubusercontent.com/emstef/Micromouse/blomaster/assets/map3.png) | ![map4](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/map4.png) |
+| ![map3](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/map3.png) | ![map4](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/map4.png) |
 
 This is a preview of the mapping array that the mouse constructs while running through the maze:
 
