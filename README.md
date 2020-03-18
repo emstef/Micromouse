@@ -72,7 +72,7 @@ And the final result, the mouse reaching its goal:
 ![finaly](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/maze_complete.gif)
 
 Press this image to watch the video (does not open in a new tab):
-[![Video](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/maze_complete.gif)](https://youtu.be/vqki3yiPmyI "Watch on YouTube")
+[![Video](https://raw.githubusercontent.com/emstef/Micromouse/master/assets/Micromouse-video.jpg)](https://youtu.be/vqki3yiPmyI "Watch on YouTube")
 
 # References
 - [Micromouse Online](http://www.micromouseonline.com/)
