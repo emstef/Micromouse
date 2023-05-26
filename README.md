@@ -14,6 +14,12 @@ Each Micromouse event more or less has the same set of rules. Differences are fo
 
 For a better understanding of Micromouse competition read the [“Micromouse Competition Rules”](https://www.ewh.ieee.org/reg/2/sac-18/MicromouseRules.pdf) from a contest held by an IEEE branch.
 
+For an even better one, I found this a few years after this project was completed:
+##### Click to open video (does not open in a new tab)
+
+[![Veritasium](https://i.ytimg.com/vi/ZMQbHMgK2rw/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZMQbHMgK2rw " The Fastest Maze-Solving Competition On Earth - Veritasium")
+
+
 # What is Webots?
 Webots is a free and open-source 3D robot simulator used in industry, education and research. It includes a large collection of freely modifiable models of robots, sensors, actuators and objects and it uses a fork of the ODE (Open Dynamics Engine) for detecting of collisions and simulating rigid body dynamics. The ODE library allows one to accurately simulate physical properties of objects such as velocity, inertia and friction.
 The robot controller programs can be written outside of Webots in C, C++, Python, ROS, Java and MATLAB using a simple API. 
