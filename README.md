@@ -91,8 +91,3 @@ Press this image to watch the video (does not open in a new tab):
 ### Paradox
 The last week that the deadline was due I was in Birmingham, UK a few hundrend meters(or yards I should say) away from Birmingham University where the biggest Micromouse competition in Europe takes place every year. I did not even visit because I was a bit behind on the deadline and I had no spare time. 
 
-
-
-|Author | Emmanouil Stefanakis|
-|--------|----------|
-|email| estefanakis1@isc.tuc.gr|
